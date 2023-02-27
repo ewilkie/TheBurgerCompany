@@ -15,6 +15,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 main {
@@ -77,9 +78,7 @@ nav a:hover {
     margin: 20px;
 }
 
-.carousel-item {
-    height: 400px;
-}
+
 
 img {
     max-height: 100%;
@@ -87,4 +86,28 @@ img {
     display: block; 
     height: auto;
     width: auto;
+}
+
+.slider {
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    display: none;
+}
+
+.active {
+    display: block;
+    background-color: #c5171b;
 }
