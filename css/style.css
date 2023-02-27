@@ -6,3 +6,85 @@ souvlaki #670000
 tenders #f05124
 seafood #00afef
 */
+
+
+body {
+    background-color: #c6401b;
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 85%;
+    max-width: 1200px;
+    background-color: #ffffff;
+}
+
+header {
+
+    border: 2px solid black;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+
+    height: 85%;
+    width: fit-content;
+}
+
+nav {
+
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+
+}
+ 
+nav li {
+    margin: 10px;
+
+}
+
+nav a {
+    color: #c5171b;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.carousel {
+    margin: 20px;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    width: auto;
+}
