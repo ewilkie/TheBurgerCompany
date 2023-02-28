@@ -5,8 +5,32 @@ fries #000000
 souvlaki #670000
 tenders #f05124
 seafood #00afef
-*/
 
+toDO
+- double border under nav, half of header
+https://codepen.io/Nuke66/pen/zaJqaW
+
+
+*/
+h1{
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+    padding:0;
+    margin: 0;
+}
 
 body {
     background-color: #c6401b;
@@ -16,6 +40,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-family: 'Arsenal';
 }
 
 main {
@@ -36,7 +61,7 @@ header {
 
 .logo {
 
-    height: 85%;
+    height: 80%;
     width: fit-content;
 }
 
@@ -94,7 +119,6 @@ img {
 }
 
 .carousel-item {
-
     position: absolute;
     width: 100%;
     height: 100%;
@@ -103,6 +127,7 @@ img {
     background-color: black;
 }
 
+/* set first item to display */
 .carousel-item:nth-child(1) {
     left: 0;
   }
@@ -111,3 +136,42 @@ section {
     display: flex;
     justify-content: center;
 }
+
+.burgers {
+    background-color: #ee1d23;
+    color: white;
+}
+
+.food-item {
+    width: 95%;
+    border: 3px dotted black;
+    padding: 20px;
+}
+
+.food-item-header {
+    width: 75%;
+    border: 1px red;
+    border-bottom: 3px dotted white;
+
+}
+
+.food-item-indiv-outer {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+.food-item-indiv-outer-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+/*
+food-item-indiv-name
+food-item-indiv-price
+food-item-indiv-outer-desc
+food-item-indiv-desc
+food-item-indiv-snack
+*/

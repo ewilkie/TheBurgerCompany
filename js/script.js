@@ -26,5 +26,5 @@ function slideLeft() {
 }
 
 // Call the slideLeft function every 5 seconds
-setInterval(slideLeft, 3000);
+//setInterval(slideLeft, 3000);
 
