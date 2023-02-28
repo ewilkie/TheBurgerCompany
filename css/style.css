@@ -160,18 +160,25 @@ section {
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     border-bottom: 2px solid white;
+    padding-bottom: 0px;
 }
 
 .food-item-indiv-outer-desc {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: left;
 }
+
+.food-item-indiv-name { 
+    width: 45%;
+    border: 2px solid black;
+}
+.food-item-indiv-price { width: 15%; text-align: center;}
 /*
-food-item-indiv-name
-food-item-indiv-price
-food-item-indiv-outer-desc
 food-item-indiv-desc
 food-item-indiv-snack
 */
