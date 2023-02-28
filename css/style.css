@@ -187,7 +187,8 @@ section {
     text-align: right;
 }
 
-.burgers .food-item-indiv-outer:last-child {
+.burgers-beef .food-item-indiv-outer:last-child,
+.burgers-chicken .food-item-indiv-outer:last-child{
     border-bottom: none;
 }
 
@@ -209,6 +210,9 @@ section {
     width: calc(100% - 20px);
 }
 
+.burgers-footer {
+    border: 1px dotted white;
+}
 
 /*
 food-item-indiv-desc
