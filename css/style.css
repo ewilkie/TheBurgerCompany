@@ -140,6 +140,23 @@ section {
 .burgers {
     background-color: #ee1d23;
     color: white;
+
+}
+
+.dblBorder {
+    position: relative;
+    border-bottom: 3px solid white;
+    width: 75%;
+}
+
+.dblBorder:after {
+    content: '';
+    border-bottom: solid 1px white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
 }
 
 .food-item {
@@ -218,3 +235,4 @@ section {
 food-item-indiv-desc
 food-item-indiv-snack
 */
+
