@@ -51,13 +51,38 @@ main {
 
 header {
 
-    border-bottom: 4px solid black;
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
 }
+
+.HdblBorder {
+    
+    position: relative;
+}
+
+.HdblBorder:before {
+    content: '';
+    border-bottom: solid 3px black;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+}
+
+.HdblBorder:after {
+    content: '';
+    border-bottom: solid 1px black;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
 
 .logo {
 
@@ -109,7 +134,7 @@ img {
 }
 
 .carousel {
-    margin: 20px 0;
+    margin: 50px 0;
     width: 85%;
     height: 400px;
     position: relative;
@@ -134,7 +159,17 @@ img {
  
 section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.food-item {
+    width: 90%;
+    border: 3px dotted black;
+    padding: 20px;
+    margin-top:20px;
+    border-radius: 10px;
 }
 
 .burgers {
@@ -142,10 +177,15 @@ section {
     color: white;
 
 }
+.souvlaki {
+    background-color: #670000;
+    color: white;
+}
 
 .dblBorder {
     position: relative;
     border-bottom: 3px solid white;
+    border-top: 2px dotted white;
     width: 75%;
 }
 
@@ -159,11 +199,7 @@ section {
     left: 0;
 }
 
-.food-item {
-    width: 95%;
-    border: 3px dotted black;
-    padding: 20px;
-}
+
 
 .food-item-header {
     width: 75%;
