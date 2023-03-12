@@ -241,7 +241,8 @@ section {
 }
 
 .burgers-beef .food-item-indiv-outer:last-child,
-.burgers-chicken .food-item-indiv-outer:last-child{
+.burgers-chicken .food-item-indiv-outer:last-child,
+.souvlaki .food-item-indiv-outer:last-child{
     border-bottom: none;
 }
 
