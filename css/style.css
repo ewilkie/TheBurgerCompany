@@ -34,6 +34,13 @@ h4 {
     margin: 0;
 }
 
+h5 {
+    color: white;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
 p{
     font-size: 16px;
     padding:0;
@@ -48,7 +55,9 @@ body {
     background-color: #c6401b;
     font-family: 'Open Sans';
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -408,4 +417,22 @@ food-item-indiv-snack
 
 footer {
     background-color: black;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    transform: rotate(-35deg);
+}
+
+.right{
+    transform: rotate(35deg);
+}
+
+footer h3 {
+    color: white;
 }
