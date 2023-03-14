@@ -32,6 +32,10 @@ p{
     margin: 0;
 }
 
+em {
+    font-size: 18px;
+}
+
 body {
     background-color: #c6401b;
     font-family: 'Open Sans';
@@ -187,6 +191,11 @@ section {
     color: white;
 }
 
+.chips {
+    background-color: #9e0b10;
+    color: white;
+}
+
 .dblBorder {
     position: relative;
     border-bottom: 3px solid white;
@@ -245,11 +254,24 @@ section {
     text-align: right;
 }
 
+.chips .food-item-indiv-name {
+    width: 55%;
+}
+
+.chips .food-item-indiv-price {
+    width: 40%;
+    text-align: left;
+}
+
+
+
 .burgers-beef .food-item-indiv-outer:last-child,
 .burgers-chicken .food-item-indiv-outer:last-child,
 .souvlaki .food-item-indiv-outer:last-child,
 .tortilla .food-item-indiv-outer:last-child,
-.tenders .food-item-indiv-outer:last-child{
+.tenders .food-item-indiv-outer:last-child,
+.chips .food-item-indiv-outer:last-child,
+.chips .food-item-indiv-outer:nth-last-child(2){
     border-bottom: none;
 }
 
@@ -290,3 +312,21 @@ food-item-indiv-snack
     border-bottom-color: black;
 }
 
+.chips {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.atomic {
+    background-color: black;
+    color: white;
+    border-top: 5px solid white;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.atomic .food-item-indiv-name {
+    width: 25%;
+}
