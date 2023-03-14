@@ -14,6 +14,7 @@ https://codepen.io/Nuke66/pen/zaJqaW
 */
 h1{
     font-size: 50px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -24,6 +25,13 @@ h2 {
 
 h3 {
     font-size: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 p{
@@ -196,6 +204,11 @@ section {
     color: white;
 }
 
+.seafood, .fish {
+    background-color:  #00afef;
+    color: white;
+}
+
 .dblBorder {
     position: relative;
     border-bottom: 3px solid white;
@@ -268,7 +281,9 @@ section {
 .tortilla .food-item-indiv-outer:last-child,
 .tenders .food-item-indiv-outer:last-child,
 .chips .food-item-indiv-outer:last-child,
-.chips .food-item-indiv-outer:nth-last-child(2){
+.chips .food-item-indiv-outer:nth-last-child(2),
+.seafood .food-item-indiv-outer:last-child,
+.fish .food-item-indiv-outer{
     border-bottom: none;
 }
 
@@ -312,7 +327,7 @@ food-item-indiv-snack
     border-bottom-color: black;
 }
 
-.chips {
+.chips, .seafood {
     border-bottom: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -345,13 +360,52 @@ food-item-indiv-snack
 
 .salads .food-item-indiv-name,
 .salads .food-item-indiv-price,
-.salads .food-item-indiv-outer-desc { 
-
+.salads .food-item-indiv-outer-desc,
+.fish .food-item-indiv-name,
+.fish .food-item-indiv-price,
+.fish .food-item-indiv-outer-desc { 
     width: 100%;
     text-align: left;
+    padding: 0;
+
 }
 
 .salads .food-item-indiv-outer-desc {
 
     height: 35%;
+}
+
+.fish {
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+}
+
+.fish-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.fish-col .food-item-indiv-outer {
+    width: 20%;
+}
+
+.friends {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    column-gap: 180px;
+    width: 80%;
+}
+
+.fish-bottom.dblBorder {
+    border-top: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: black;
 }
