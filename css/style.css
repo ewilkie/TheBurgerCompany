@@ -235,9 +235,6 @@ section {
 
 .food-item-indiv-outer-desc {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
 }
 
 .food-item-indiv-name { 
@@ -302,13 +299,16 @@ food-item-indiv-desc
 food-item-indiv-snack
 */
 
-.tortilla .dblBorder {
+.tortilla .dblBorder,
+.salads .dblBorder  {
     border-bottom-color: black;
     border-top-color: black;
 }
 
 .tortilla .dblBorder:after,
-.tortilla .food-item-indiv-outer {
+.tortilla .food-item-indiv-outer,
+.salads .dblBorder:after,
+.salads .food-item-indiv-outer {
     border-bottom-color: black;
 }
 
@@ -329,4 +329,29 @@ food-item-indiv-snack
 
 .atomic .food-item-indiv-name {
     width: 25%;
+}
+
+.salads-col {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.salads .food-item-indiv-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.salads .food-item-indiv-name,
+.salads .food-item-indiv-price,
+.salads .food-item-indiv-outer-desc { 
+
+    width: 100%;
+    text-align: left;
+}
+
+.salads .food-item-indiv-outer-desc {
+
+    height: 35%;
 }
