@@ -182,6 +182,11 @@ section {
     color: white;
 }
 
+.tenders {
+    background-color: #f05124;
+    color: white;
+}
+
 .dblBorder {
     position: relative;
     border-bottom: 3px solid white;
@@ -242,7 +247,9 @@ section {
 
 .burgers-beef .food-item-indiv-outer:last-child,
 .burgers-chicken .food-item-indiv-outer:last-child,
-.souvlaki .food-item-indiv-outer:last-child{
+.souvlaki .food-item-indiv-outer:last-child,
+.tortilla .food-item-indiv-outer:last-child,
+.tenders .food-item-indiv-outer:last-child{
     border-bottom: none;
 }
 
@@ -272,4 +279,14 @@ section {
 food-item-indiv-desc
 food-item-indiv-snack
 */
+
+.tortilla .dblBorder {
+    border-bottom-color: black;
+    border-top-color: black;
+}
+
+.tortilla .dblBorder:after,
+.tortilla .food-item-indiv-outer {
+    border-bottom-color: black;
+}
 
