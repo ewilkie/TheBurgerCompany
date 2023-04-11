@@ -5,13 +5,8 @@ fries #000000
 souvlaki #670000
 tenders #f05124
 seafood #00afef
-
-toDO
-- double border under nav, half of header
-https://codepen.io/Nuke66/pen/zaJqaW
-
-
 */
+
 h1{
     font-size: 50px;
     text-transform: uppercase;
@@ -71,7 +66,6 @@ main {
 }
 
 header {
-
     height: 75px;
     display: flex;
     align-items: center;
@@ -79,8 +73,7 @@ header {
     padding: 0 20px;
 }
 
-.HdblBorder {
-    
+.HdblBorder {  
     position: relative;
 }
 
@@ -106,13 +99,12 @@ header {
 
 
 .logo {
-
-    height: 80%;
-    width: fit-content;
+    height: 100px;
+    padding-top: 40px;
 }
 
-nav {
 
+nav {
     padding: 10px 0;
     display: flex;
     align-items: center;
