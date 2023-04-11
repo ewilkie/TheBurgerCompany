@@ -247,6 +247,11 @@ section {
     padding-bottom: 0px;
 }
 
+.bacon {
+    border-bottom: none;
+    
+}
+
 .food-item-indiv-outer-desc {
     width: 40%;
 }
