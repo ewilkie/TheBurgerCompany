@@ -69,6 +69,7 @@ main {
     width: 85%;
     max-width: 1200px;
     background-color: #ffffff;
+    padding-bottom: 20px;
 }
 
 header {
@@ -219,7 +220,7 @@ section {
     position: relative;
     border-bottom: 3px solid white;
     border-top: 2px dotted white;
-    width: 75%;
+    width: 100%;
 }
 
 .dblBorder:after {
@@ -244,6 +245,7 @@ section {
     height: 200px;
     width: 200px;
     position: relative;
+    z-index: 1;
 }
 
 
@@ -420,17 +422,19 @@ food-item-indiv-snack
     width: 80%;
 }
 
-.fish-bottom.dblBorder {
+.fish-bottom {
     border-top: none;
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
+
+
 
 footer {
     background-color: black;
     height: 100px;
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
