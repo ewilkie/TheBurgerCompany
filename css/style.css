@@ -344,8 +344,7 @@ food-item-indiv-snack
 
 .tortilla .dblBorder:after,
 .tortilla .food-item-indiv-outer,
-.salads .dblBorder:after,
-.salads .food-item-indiv-outer {
+.salads .dblBorder:after {
     border-bottom-color: black;
 }
 
