@@ -143,7 +143,6 @@ img {
     max-width: 100%; 
     display: block; 
     height: auto;
-
 }
 
 .carousel {
@@ -226,15 +225,25 @@ section {
     bottom: -6px;
     left: 0;
 }
-
-
-
+/* need to fix this to get the fries circle going */
 .food-item-header {
-    width: 75%;
-    border: 1px red;
-    border-bottom: 3px dotted white;
-
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.fries-circle-outer {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+
+.fries-circle-inner {
+    position: absolute;
+    top: -15px;
+}
+
 
 .food-item-indiv-outer {
     display: flex;
@@ -242,14 +251,12 @@ section {
     align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
-
     border-bottom: 2px solid white;
     padding-bottom: 0px;
 }
 
 .bacon {
-    border-bottom: none;
-    
+    border: none;
 }
 
 .food-item-indiv-outer-desc {
@@ -279,19 +286,18 @@ section {
     text-align: left;
 }
 
-
-
 .burgers-beef .food-item-indiv-outer:last-child,
 .burgers-chicken .food-item-indiv-outer:last-child,
 .souvlaki .food-item-indiv-outer:last-child,
 .tortilla .food-item-indiv-outer:last-child,
 .tenders .food-item-indiv-outer:last-child,
 .chips .food-item-indiv-outer:last-child,
-.chips .food-item-indiv-outer:nth-last-child(2),
+.chips .food-item-indiv-outer:nth-last-child(1),
 .seafood .food-item-indiv-outer:last-child,
 .fish .food-item-indiv-outer{
     border-bottom: none;
 }
+
 
 .epic-burger-outer {
     display: flex;
@@ -433,3 +439,5 @@ footer {
 footer h3 {
     color: white;
 }
+
+
