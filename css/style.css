@@ -283,8 +283,14 @@ section {
 
 .food-item-header-souva {
     border: 1px solid green;
-    display: flex;
+    position: relative;
 }
+
+/*
+.souva-title {
+    z-index: 10;
+}
+*/
 
 .gluten-free-souva {
     margin-top: 20px;
@@ -292,7 +298,10 @@ section {
     height: 90px;
     border-radius: 50%;
     background-color: white;
-    position: relative;
+
+    position: absolute;
+    top: -10px;
+    left: 550px;
 }
 
 .gluten-free-souva-text {
@@ -319,15 +328,21 @@ section {
 }
 
 .double-souva {
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 45px;
     background-color: #CB7817;
     border-radius: 20px;
-    padding: 5px 10px 10px 10px;
-    margin-top: 20px;
-    font-size: 25px;
+    padding: 5px;
+    margin-top: 25px;
+
+    position: absolute;
+    top: 0;
+    left: 750px;
+}
+
+.double-souva-text {
+    font-size: 20px;
     text-align: center;
-    position: relative;
 }
 
 .star-souva {
@@ -336,6 +351,7 @@ section {
     top: -10px;
     left: -15px;
     transform: rotate(-30deg);
+    font-size: 30px;
 }
 
 .bacon {
