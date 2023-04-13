@@ -266,7 +266,6 @@ section {
     z-index: 1;
 }
 
-
 .fries-circle-inner-chick {
     position: absolute;
     top: -40px;
@@ -286,6 +285,43 @@ section {
 }
 
 
+.food-item-header-souva {
+    border: 1px solid green;
+    display: flex;
+}
+
+.gluten-free-souva {
+    margin-top: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.gluten-free-souva-text {
+    color: black;
+    width: 70px;
+    transform: rotate(15deg);
+    padding: 10px 0 0 15px;
+}
+
+.gluten-free-souva-price {
+    color: black;
+    width: 70px;
+    transform: rotate(15deg);
+    text-align: center;
+}
+
+.fa-check {
+    color: black;
+    font-size: 50px;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    
+}
 
 .bacon {
     border: none;
