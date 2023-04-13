@@ -191,6 +191,17 @@ section {
     border-radius: 10px;
 }
 
+.food-item-indiv-outer {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid white;
+    padding-bottom: 0px;
+}
+
+
 .burgers {
     background-color: #ee1d23;
     color: white;
@@ -268,16 +279,13 @@ section {
     right: 0;
 }
 
-
-.food-item-indiv-outer {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 2px solid white;
-    padding-bottom: 0px;
+.burger-addon {
+    border: 2px dotted white;
+    padding: 5px;
+    margin-bottom: 10px;
 }
+
+
 
 .bacon {
     border: none;
@@ -311,12 +319,12 @@ section {
 }
 
 .burgers-beef .food-item-indiv-outer:last-child,
-.burgers-chicken .food-item-indiv-outer:last-child,
+.burgers-chicken .food-item-indiv-outer:nth-last-child(2),
 .souvlaki .food-item-indiv-outer:last-child,
 .tortilla .food-item-indiv-outer:last-child,
 .tenders .food-item-indiv-outer:last-child,
 .chips .food-item-indiv-outer:last-child,
-.chips .food-item-indiv-outer:nth-last-child(1),
+.atomic .food-item-indiv-outer:last-child,
 .seafood .food-item-indiv-outer:last-child,
 .fish .food-item-indiv-outer{
     border-bottom: none;
@@ -335,7 +343,7 @@ section {
 }
 
 .epic-burger {
-    border: 1px dotted white;
+    border: 2px dotted white;
     margin-top: 10px;
     padding: 10px 20px;
     width: 230px;
@@ -346,10 +354,6 @@ section {
     border: 1px dotted white;
 }
 
-/*
-food-item-indiv-desc
-food-item-indiv-snack
-*/
 
 .tortilla .dblBorder,
 .salads .dblBorder  {
