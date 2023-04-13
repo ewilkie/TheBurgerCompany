@@ -254,6 +254,9 @@ section {
     justify-content: space-between;
     padding-top: 30px;
 }
+.wrap {
+    
+}
 
 .fries-circle-outer {
     height: 200px;
@@ -282,15 +285,8 @@ section {
 
 
 .food-item-header-souva {
-    border: 1px solid green;
     position: relative;
 }
-
-/*
-.souva-title {
-    z-index: 10;
-}
-*/
 
 .gluten-free-souva {
     margin-top: 20px;
@@ -300,8 +296,8 @@ section {
     background-color: white;
 
     position: absolute;
-    top: -10px;
-    left: 550px;
+    top: -20px;
+    left: 52%;
 }
 
 .gluten-free-souva-text {
@@ -336,8 +332,8 @@ section {
     margin-top: 25px;
 
     position: absolute;
-    top: 0;
-    left: 750px;
+    top: -20px;
+    left: 75%;
 }
 
 .double-souva-text {
