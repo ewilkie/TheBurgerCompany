@@ -22,13 +22,18 @@ h1 {
     font-size: 55px;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 20px 0 5px 0;
+    margin: 0px 0 5px 0;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.h2-tender {
+    margin: 0px;
+    font-size: 27px;
 }
 
 h3 {
@@ -207,6 +212,38 @@ section {
     padding-bottom: 0px;
 }
 
+.tenders-col {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    width: 72%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.food-item-indiv-outer-tender {
+    display: grid;
+    grid-template-areas:
+    "top-left top-right"
+    "bottom-row bottom-row";
+    grid-template-columns: auto 35%;
+}
+
+.food-item-indiv-name-tender {
+    grid-area: top-left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.food-item-indiv-price-tender {
+    grid-area: top-right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.food-item-indiv-outer-desc-tender {
+    grid-area: bottom-row;
+}
 
 .burgers {
     background-color: #ee1d23;
@@ -218,11 +255,20 @@ section {
 .souvlaki {
     background-color: #670000;
     color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 20px;
+}
+
+.tortilla {
+    padding-top: 10px;
 }
 
 .tenders {
     background-color: #f05124;
     color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .chips {
@@ -242,7 +288,7 @@ section {
 .dblBorder {
     position: relative;
     border-bottom: 3px solid white;
-    border-top: 2px dotted white;
+    border-top: 3px dotted white;
     width: 100%;
 }
 
@@ -299,6 +345,7 @@ section {
 
 .food-item-header-souva {
     position: relative;
+    margin-top: 0px;
 }
 
 .gluten-free-souva {
@@ -398,7 +445,7 @@ section {
 .burgers-chicken .food-item-indiv-outer:nth-last-child(2),
 .souvlaki .food-item-indiv-outer:last-child,
 .tortilla .food-item-indiv-outer:last-child,
-.tenders .food-item-indiv-outer:last-child,
+.tenders .food-item-indiv-outer,
 .chips .food-item-indiv-outer:last-child,
 .atomic .food-item-indiv-outer:last-child,
 .seafood .food-item-indiv-outer:last-child,
@@ -441,6 +488,10 @@ section {
 .tortilla .food-item-indiv-outer,
 .salads .dblBorder:after {
     border-bottom-color: black;
+}
+
+.tenders .dblBorder {
+    border-top: none;
 }
 
 .chips, .seafood {
