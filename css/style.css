@@ -62,20 +62,26 @@ b {
 
 
 main {
-    width: 85%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     background-color: #ffffff;
-    padding-bottom: 20px;
 }
 
-header {
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
+.main-column-left {
+    grid-column: 1 / 2;
+  }
+  
+.main-column-right {
+    grid-column: 2 / 3;
+  }
+
+
+/*
 .HdblBorder {  
     position: relative;
 }
@@ -139,7 +145,7 @@ nav a:hover {
     color: black;
     border-bottom: 3px solid black;
 }
-
+*/
 
 img {
     max-height: 100%;
@@ -148,6 +154,7 @@ img {
     height: auto;
 }
 
+/*
 .carousel {
     margin: 50px 0;
     width: 85%;
@@ -167,24 +174,27 @@ img {
     background-color: black;
 }
 
-/* set first item to display */
+/* set first item to display 
 .carousel-item:nth-child(1) {
     left: 0;
   }
- 
+ */
+
+ /*
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+*/
 
-.food-item {
-    width: 90%;
-    border: 3px dotted black;
-    padding: 0 20px 0 20px;
-    margin-top:20px;
-    border-radius: 10px;
+.food-item {  
+    /* border: 3px dotted black; */
+    padding: 0 20px 10px 20px;
+    /* margin-top:20px; 
+    border-radius: 10px; */
+    margin-bottom: 10px;
 }
 
 .food-item-indiv-outer {
@@ -201,6 +211,8 @@ section {
 .burgers {
     background-color: #ee1d23;
     color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 
 }
 .souvlaki {
@@ -216,6 +228,10 @@ section {
 .chips {
     background-color: #9e0b10;
     color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-top: 5px;
+    margin-bottom: 1px;
 }
 
 .seafood, .fish {
@@ -253,9 +269,6 @@ section {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-}
-.wrap {
-    
 }
 
 .fries-circle-outer {
