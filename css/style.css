@@ -23,7 +23,8 @@ h2 {
 
 .h2-tender {
     margin: 0px;
-    font-size: 27px;
+    padding: 0;
+    font-size: 25px;
 }
 
 h3 {
@@ -93,8 +94,6 @@ img {
     display: block; 
     height: auto;
 }
-
-
 
 .food-item {  
     padding: 0 10px 10px 10px;
@@ -394,7 +393,7 @@ img {
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
     width: 72%;
-    grid-column-gap: 10px;
+    grid-column-gap: 1px;
     grid-row-gap: 10px;
 }
 
@@ -404,6 +403,7 @@ img {
     "top-left top-right"
     "bottom-row bottom-row";
     grid-template-columns: auto 35%;
+
 }
 
 .food-item-indiv-name-tender {
@@ -420,6 +420,7 @@ img {
 
 .food-item-indiv-outer-desc-tender {
     grid-area: bottom-row;
+    padding: 5px;
 }
 
 .tenders .dblBorder {
