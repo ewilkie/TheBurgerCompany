@@ -7,32 +7,29 @@ tenders #f05124
 seafood #00afef
 */
 
-body {
-    background-color: #c6401b;
-    font-family: 'Oswald';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
+/* text sizing */
 h1 {
-    font-size: 55px;
+    font-size: 48px;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 20px 0 5px 0;
+    margin: 0px 0 5px 0;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
+.h2-tender {
+    margin: 0px;
+    padding: 0;
+    font-size: 25px;
+}
+
 h3 {
-    font-size: 20px;
+    font-size: 16px;
+    margin:0px;
 }
 
 h4 {
@@ -50,7 +47,7 @@ h5 {
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
     padding:0;
     margin: 0;
 }
@@ -59,86 +56,36 @@ b {
     font-weight: 700;
 }
 
+/**********************/
+/* main html elements */
+/**********************/
 
+body {
+    background-color: #c6401b;
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+}
 
 main {
-    width: 85%;
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 10px;   
     background-color: #ffffff;
-    padding-bottom: 20px;
 }
 
-header {
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.HdblBorder {  
-    position: relative;
-}
-
-.HdblBorder:before {
-    content: '';
-    border-bottom: solid 3px black;
-    width: 40%;
-    height: 100%;
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-}
-
-.HdblBorder:after {
-    content: '';
-    border-bottom: solid 1px black;
-    width: 40%;
-    height: 100%;
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-}
-
-
-.logo {
-    height: 100px;
-    padding-top: 40px;
-}
-
-
-nav {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-
-}
- 
-nav li {
-    margin: 10px;
-
-}
-
-nav a {
-    color: #c5171b;
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: black;
-    border-bottom: 3px solid black;
-}
+.main-column-left {
+    grid-column: 1 / 2;
+  }
+  
+.main-column-right {
+    grid-column: 2 / 3;
+  }
 
 
 img {
@@ -148,43 +95,16 @@ img {
     height: auto;
 }
 
-.carousel {
-    margin: 50px 0;
-    width: 85%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-
-    border: 2px solid black;
+.food-item {  
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
 }
 
-.carousel-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 100%;
-    transition: 3s;
-    background-color: black;
-}
-
-/* set first item to display */
-.carousel-item:nth-child(1) {
-    left: 0;
-  }
- 
-section {
+.food-item-header {
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.food-item {
-    width: 90%;
-    border: 3px dotted black;
-    padding: 0 20px 0 20px;
-    margin-top:20px;
-    border-radius: 10px;
+    justify-content: space-between;
+    padding-top: 15px;
 }
 
 .food-item-indiv-outer {
@@ -198,35 +118,29 @@ section {
 }
 
 
-.burgers {
-    background-color: #ee1d23;
-    color: white;
-
-}
-.souvlaki {
-    background-color: #670000;
-    color: white;
+.food-item-indiv-outer-desc {
+    width: 40%;
 }
 
-.tenders {
-    background-color: #f05124;
-    color: white;
+.food-item-indiv-name { 
+    width: 35%;
 }
 
-.chips {
-    background-color: #9e0b10;
-    color: white;
+.food-item-indiv-name h2 {
+    padding: 0;
+    margin: 0;
 }
 
-.seafood, .fish {
-    background-color:  #00afef;
-    color: white;
+.food-item-indiv-price { 
+    width: 10%; 
+    text-align: right;
 }
 
+/* double Border for headers */
 .dblBorder {
     position: relative;
     border-bottom: 3px solid white;
-    border-top: 2px dotted white;
+    border-top: 3px dotted white;
     width: 100%;
 }
 
@@ -240,13 +154,33 @@ section {
     left: 0;
 }
 
-
-.food-item-header {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
+.burgers-beef .food-item-indiv-outer:last-child,
+.burgers-chicken .food-item-indiv-outer:nth-last-child(2),
+.souvlaki .food-item-indiv-outer:last-child,
+.tortilla .food-item-indiv-outer:last-child,
+.tenders .food-item-indiv-outer,
+.chips .food-item-indiv-outer:last-child,
+.atomic .food-item-indiv-outer:last-child,
+.seafood .food-item-indiv-outer:last-child,
+.fish .food-item-indiv-outer{
+    border-bottom: none;
 }
+
+
+/***********/
+/* Burgers */
+/***********/
+
+.burgers {
+    background-color: #ee1d23;
+    color: white;
+    border-bottom-right-radius: 20px;
+}
+
+.bacon {
+    border: none;
+}
+
 
 .food-item-header-chick {
     height: 100px;
@@ -254,10 +188,37 @@ section {
     justify-content: space-between;
     padding-top: 30px;
 }
-.wrap {
-    
+
+.burger-addon {
+    border: 2px dotted white;
+    padding: 5px;
+    margin: 10px 0 0 0;
 }
 
+.epic-burger-outer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.epic-burger-outer .food-item-indiv-name {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.epic-burger {
+    border: 2px dotted white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 230px;
+    text-align: center;
+}
+
+.burgers-footer {
+    border: 1px dotted white;
+}
+
+/* circle with image of fries and price */
 .fries-circle-outer {
     height: 200px;
     width: 200px;
@@ -277,15 +238,57 @@ section {
     right: 0;
 }
 
-.burger-addon {
-    border: 2px dotted white;
-    padding: 5px;
-    margin-bottom: 10px;
+
+/*********/
+/* Chips */
+/*********/
+
+.chips {
+    background-color: #9e0b10;
+    color: white;
+    border-top-right-radius: 20px;
+    padding-top: 5px;
+    margin-bottom: 1px;
+    border-bottom: none;
+}
+
+.chips .food-item-indiv-name {
+    width: 55%;
+}
+
+.chips .food-item-indiv-price {
+    width: 40%;
+    text-align: left;
 }
 
 
+.atomic {
+    background-color: black;
+    color: white;
+    border-top: 5px solid white;
+    margin: 0;
+}
+
+.atomic .food-item-indiv-name {
+    width: 25%;
+}
+
+/*************/
+/* Souvalaki */
+/*************/
+
+.souvlaki {
+    background-color: #670000;
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 20px;
+}
+
+/* header items */
 .food-item-header-souva {
     position: relative;
+    margin-top: 0px;
 }
 
 .gluten-free-souva {
@@ -350,138 +353,136 @@ section {
     font-size: 30px;
 }
 
-.bacon {
-    border: none;
+
+/************/
+/* Tortilla */
+/************/
+
+.tortilla {
+    padding-top: 0px;
 }
 
-.food-item-indiv-outer-desc {
-    width: 40%;
-}
-
-.food-item-indiv-name { 
-    width: 35%;
-}
-
-.food-item-indiv-name h2 {
-    padding: 0;
-    margin: 0;
-}
-
-.food-item-indiv-price { 
-    width: 10%; 
-    text-align: right;
-}
-
-.chips .food-item-indiv-name {
-    width: 55%;
-}
-
-.chips .food-item-indiv-price {
-    width: 40%;
-    text-align: left;
-}
-
-.burgers-beef .food-item-indiv-outer:last-child,
-.burgers-chicken .food-item-indiv-outer:nth-last-child(2),
-.souvlaki .food-item-indiv-outer:last-child,
-.tortilla .food-item-indiv-outer:last-child,
-.tenders .food-item-indiv-outer:last-child,
-.chips .food-item-indiv-outer:last-child,
-.atomic .food-item-indiv-outer:last-child,
-.seafood .food-item-indiv-outer:last-child,
-.fish .food-item-indiv-outer{
-    border-bottom: none;
-}
-
-
-.epic-burger-outer {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-}
-
-.epic-burger-outer .food-item-indiv-name {
-    padding-top: 10px;
-    width: 100%;
-}
-
-.epic-burger {
-    border: 2px dotted white;
-    margin-top: 10px;
-    padding: 10px 20px;
-    width: 230px;
-    text-align: center;
-}
-
-.burgers-footer {
-    border: 1px dotted white;
-}
-
-
-.tortilla .dblBorder,
-.salads .dblBorder  {
+.tortilla .dblBorder  {
     border-bottom-color: black;
     border-top-color: black;
 }
 
 .tortilla .dblBorder:after,
-.tortilla .food-item-indiv-outer,
-.salads .dblBorder:after {
+.tortilla .food-item-indiv-outer {
     border-bottom-color: black;
 }
 
-.chips, .seafood {
-    border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
 
-.atomic {
-    background-color: black;
+/***********/
+/* Tenders */
+/***********/
+
+.tenders {
+    background-color: #f05124;
     color: white;
-    border-top: 5px solid white;
-    margin: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-.atomic .food-item-indiv-name {
-    width: 25%;
+.tenders h1 {
+    font-size: 30px;
+} 
+
+.tenders-col {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    width: 72%;
+    grid-column-gap: 1px;
+    grid-row-gap: 10px;
+}
+
+.food-item-indiv-outer-tender {
+    display: grid;
+    grid-template-areas:
+    "top-left top-right"
+    "bottom-row bottom-row";
+    grid-template-columns: auto 35%;
+
+}
+
+.food-item-indiv-name-tender {
+    grid-area: top-left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.food-item-indiv-price-tender {
+    grid-area: top-right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.food-item-indiv-outer-desc-tender {
+    grid-area: bottom-row;
+    padding: 5px;
+}
+
+.tenders .dblBorder {
+    border-top: none;
+}
+
+/**********/
+/* Salads */
+/**********/
+
+.salads {
+    margin: 0 0 0 15px;
 }
 
 .salads-col {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,auto);
+
 }
 
-.salads .food-item-indiv-outer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 5px;
+.food-item-indiv-outer-salad {
+    display: grid; 
+    grid-template-rows: auto 1fr auto;
 }
 
-.salads .food-item-indiv-name,
-.salads .food-item-indiv-price,
-.salads .food-item-indiv-outer-desc,
-.fish .food-item-indiv-name,
-.fish .food-item-indiv-price,
-.fish .food-item-indiv-outer-desc { 
-    width: 100%;
-    text-align: left;
-    padding: 0;
-
+.food-item-indiv-outer-desc-salad {
+    align-self: flex-start;
+    padding: 2px;
 }
 
 .salads .food-item-indiv-outer-desc {
-
     height: 35%;
 }
 
+.salads .dblBorder  {
+    border-bottom-color: black;
+    border-top-color: black;
+}
+
+.salads .dblBorder:after {
+    border-bottom-color: black;
+}
+
+/***********/
+/* Seafood */
+/***********/
+
+.seafood {
+    margin-bottom:0px;
+    padding-top: 10px;
+    border-top-left-radius: 20px;
+    border-bottom: none;
+}
+
+.seafood, .fish {
+    background-color:  #00afef;
+    color: white;
+}
+
 .fish {
-    margin: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    margin: 0 0 10px 0;
+    border-bottom-left-radius: 20px;
     border-top: none;
 }
 
@@ -506,10 +507,22 @@ section {
 .fish-bottom {
     border-top: none;
     width: 100%;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0px 0;
+}
+
+.fish .food-item-indiv-name,
+.fish .food-item-indiv-price,
+.fish .food-item-indiv-outer-desc { 
+    width: 100%;
+    text-align: left;
+    padding: 0;
+
 }
 
 
+/***********/
+/* Footer */
+/**********/
 
 footer {
     background-color: black;
@@ -534,3 +547,104 @@ footer h3 {
 }
 
 
+
+/*
+.HdblBorder {  
+    position: relative;
+}
+
+.HdblBorder:before {
+    content: '';
+    border-bottom: solid 3px black;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+}
+
+.HdblBorder:after {
+    content: '';
+    border-bottom: solid 1px black;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+
+.logo {
+    height: 100px;
+    padding-top: 40px;
+}
+
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+
+}
+ 
+nav li {
+    margin: 10px;
+
+}
+
+nav a {
+    color: #c5171b;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    border-bottom: 3px solid black;
+}
+*/
+
+/*
+.carousel {
+    margin: 50px 0;
+    width: 85%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+    border: 2px solid black;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    transition: 3s;
+    background-color: black;
+}
+
+/* set first item to display 
+.carousel-item:nth-child(1) {
+    left: 0;
+  }
+ */
+
+ /*
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+*/
