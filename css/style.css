@@ -73,7 +73,7 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 45% 55%;
     gap: 10px;   
     background-color: #ffffff;
 }
@@ -93,6 +93,8 @@ img {
     display: block; 
     height: auto;
 }
+
+
 
 .food-item {  
     padding: 0 10px 10px 10px;
@@ -174,7 +176,6 @@ img {
     background-color: #ee1d23;
     color: white;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 
 .bacon {
@@ -218,6 +219,26 @@ img {
     border: 1px dotted white;
 }
 
+/* circle with image of fries and price */
+.fries-circle-outer {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.fries-circle-inner-chick {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.fries-circle-inner {
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
 
 /*********/
 /* Chips */
@@ -241,33 +262,12 @@ img {
     text-align: left;
 }
 
-.fries-circle-outer {
-    height: 200px;
-    width: 200px;
-    position: relative;
-    z-index: 1;
-}
-
-.fries-circle-inner-chick {
-    position: absolute;
-    top: -40px;
-    right: 0;
-}
-
-.fries-circle-inner {
-    position: absolute;
-    top: -10px;
-    right: 0;
-}
-
 
 .atomic {
     background-color: black;
     color: white;
     border-top: 5px solid white;
     margin: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
 }
 
 .atomic .food-item-indiv-name {
@@ -286,7 +286,7 @@ img {
     padding-top: 20px;
 }
 
-
+/* header items */
 .food-item-header-souva {
     position: relative;
     margin-top: 0px;
@@ -360,7 +360,7 @@ img {
 /************/
 
 .tortilla {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .tortilla .dblBorder  {
@@ -384,6 +384,10 @@ img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+.tenders h1 {
+    font-size: 30px;
+} 
 
 .tenders-col {
     display: grid;
