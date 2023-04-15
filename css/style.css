@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin:0px;
 }
 
@@ -46,7 +46,7 @@ h5 {
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
     padding:0;
     margin: 0;
 }
@@ -74,7 +74,7 @@ main {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;   
+    gap: 10px;   
     background-color: #ffffff;
 }
 
@@ -95,10 +95,7 @@ img {
 }
 
 .food-item {  
-    /* border: 3px dotted black; */
-    padding: 0 20px 10px 20px;
-    /* margin-top:20px; 
-    border-radius: 10px; */
+    padding: 0 10px 10px 10px;
     margin-bottom: 10px;
 }
 
@@ -176,10 +173,14 @@ img {
 .burgers {
     background-color: #ee1d23;
     color: white;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
+
+.bacon {
+    border: none;
+}
+
 
 .food-item-header-chick {
     height: 100px;
@@ -191,13 +192,8 @@ img {
 .burger-addon {
     border: 2px dotted white;
     padding: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0 0 0;
 }
-
-.bacon {
-    border: none;
-}
-
 
 .epic-burger-outer {
     display: flex;
@@ -230,16 +226,10 @@ img {
 .chips {
     background-color: #9e0b10;
     color: white;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
     padding-top: 5px;
     margin-bottom: 1px;
-}
-
-.chips {
     border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 .chips .food-item-indiv-name {
@@ -291,8 +281,8 @@ img {
 .souvlaki {
     background-color: #670000;
     color: white;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding-top: 20px;
 }
 
@@ -391,8 +381,8 @@ img {
 .tenders {
     background-color: #f05124;
     color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .tenders-col {
@@ -480,7 +470,7 @@ img {
 
 .seafood {
     margin-bottom:0px;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 20px;
 }
 
 .seafood, .fish {
@@ -491,7 +481,7 @@ img {
 
 .fish {
     margin: 0 0 10px 0;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 20px;
     border-top: none;
 }
 
@@ -534,9 +524,6 @@ img {
     padding: 0;
 
 }
-
-
-
 
 
 /***********/
