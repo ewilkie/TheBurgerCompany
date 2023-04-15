@@ -470,13 +470,14 @@ img {
 
 .seafood {
     margin-bottom:0px;
+    padding-top: 10px;
     border-top-left-radius: 20px;
+    border-bottom: none;
 }
 
 .seafood, .fish {
     background-color:  #00afef;
     color: white;
-    padding-top: 10px;
 }
 
 .fish {
@@ -508,13 +509,6 @@ img {
     width: 100%;
     margin: 20px 0 0px 0;
 }
-
-.seafood {
-    border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
 
 .fish .food-item-indiv-name,
 .fish .food-item-indiv-price,
