@@ -431,9 +431,14 @@ img {
 /* Salads */
 /**********/
 
+.salads {
+    margin: 0 0 0 15px;
+}
+
 .salads-col {
     display: grid;
     grid-template-columns: repeat(4,auto);
+
 }
 
 .food-item-indiv-outer-salad {
@@ -443,22 +448,12 @@ img {
 
 .food-item-indiv-outer-desc-salad {
     align-self: flex-start;
+    padding: 2px;
 }
 
 .salads .food-item-indiv-outer-desc {
     height: 35%;
 }
-
-.salads .food-item-indiv-name,
-.salads .food-item-indiv-price,
-.salads .food-item-indiv-outer-desc { 
-    width: 100%;
-    text-align: left;
-    padding: 0;
-
-}
-
-
 
 .salads .dblBorder  {
     border-bottom-color: black;
