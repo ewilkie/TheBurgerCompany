@@ -302,6 +302,21 @@ img {
     padding-left: 20px;
 }
 
+/**********/
+/* Address */
+/**********/
+
+.address-outer {
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*************/
 /* Souvalaki */
 /*************/
