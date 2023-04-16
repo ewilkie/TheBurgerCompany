@@ -115,17 +115,19 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 2px solid white;
-    padding-bottom: 0px;
+    padding-bottom: 2px;
     border: 2px solid black;
 }
 
 
 .food-item-indiv-outer-desc {
-    width: 40%;
+    width: 50%;
+    border: 2px solid black;
 }
 
 .food-item-indiv-name { 
     width: 35%;
+    border: 2px solid black;
 }
 
 .food-item-indiv-name h2 {
@@ -136,6 +138,7 @@ img {
 .food-item-indiv-price { 
     width: 10%; 
     text-align: right;
+    border: 2px solid black;
 }
 
 /* double Border for headers */
