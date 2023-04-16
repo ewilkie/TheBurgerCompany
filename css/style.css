@@ -101,7 +101,7 @@ img {
 }
 
 .food-item-header {
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -111,18 +111,16 @@ img {
 .food-item-indiv-outer {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: top;
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 2px solid white;
     padding-bottom: 2px;
-    border: 2px solid black;
 }
 
 
 .food-item-indiv-outer-desc {
     width: 50%;
-    border: 2px solid black;
 }
 
 .food-item-indiv-name { 
@@ -138,7 +136,7 @@ img {
 .food-item-indiv-price { 
     width: 10%; 
     text-align: right;
-    border: 2px solid black;
+    
 }
 
 /* double Border for headers */
@@ -219,6 +217,7 @@ li:before {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    border: 2px solid black;
 }
 
 .burger-addon {
@@ -231,12 +230,14 @@ li:before {
     display: flex;
     flex-direction: column;
     width: 35%;
+    border: 2px solid black;
 }
 
+
 .epic-burger-outer .food-item-indiv-name {
-    padding-top: 10px;
     width: 100%;
 }
+
 
 .epic-burger {
     border: 2px dotted white;
