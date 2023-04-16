@@ -105,7 +105,6 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    border: 2px solid black;
 }
 
 .food-item-indiv-outer {
@@ -174,19 +173,6 @@ img {
 .fish .food-item-indiv-outer{
     border-bottom: none;
 }
-/*
-ul {
-    list-style-type: none; 
-    margin:0;
-    padding: 0;
-}
-
-li:before {
-    content: "•"; 
-    color: white;
-    margin-right: 5px; /* add some space between bullet and text *
-}
-*/
 
 .bullet {
     color: white; /* change the color */
@@ -211,13 +197,8 @@ li:before {
     border: none;
 }
 
-
-.food-item-header-chick {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    border: 2px solid black;
+.burgers-beef {
+    padding-bottom: 20px;
 }
 
 .burger-addon {
@@ -247,28 +228,24 @@ li:before {
     text-align: center;
 }
 
-.burgers-footer {
-    border: 1px dotted white;
-}
-
 /* circle with image of fries and price */
 .fries-circle-outer {
-    height: 200px;
-    width: 200px;
+    height: 145px;
+    width: 145px;
     position: relative;
     z-index: 1;
 }
 
 .fries-circle-inner-chick {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: -50px;
+    right: -10px;
 }
 
 .fries-circle-inner {
     position: absolute;
     top: -10px;
-    right: 0;
+    right: -5px;
 }
 
 
