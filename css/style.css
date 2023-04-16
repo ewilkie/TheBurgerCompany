@@ -74,7 +74,7 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 50% 50%;
     gap: 10px;   
     background-color: #ffffff;
 }
@@ -105,6 +105,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+    border: 2px solid black;
 }
 
 .food-item-indiv-outer {
@@ -115,6 +116,7 @@ img {
     flex-wrap: wrap;
     border-bottom: 2px solid white;
     padding-bottom: 0px;
+    border: 2px solid black;
 }
 
 
@@ -171,7 +173,28 @@ img {
 .fish .food-item-indiv-outer{
     border-bottom: none;
 }
+/*
+ul {
+    list-style-type: none; 
+    margin:0;
+    padding: 0;
+}
 
+li:before {
+    content: "•"; 
+    color: white;
+    margin-right: 5px; /* add some space between bullet and text *
+}
+*/
+
+.bullet {
+    color: white; /* change the color */
+    margin-right: 1px; /* add some space between bullet and text */
+}
+
+.wrap.bullet{
+    color: black;
+}
 
 /***********/
 /* Burgers */
