@@ -97,7 +97,7 @@ img {
 
 .food-item {  
     padding: 0 10px 10px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 
 .food-item-header {
@@ -152,6 +152,12 @@ img {
     position: absolute;
     bottom: -6px;
     left: 0;
+}
+
+.bottom-border {
+    border-top: none;
+    width: 100%;
+    /* margin: 20px 0 0px 0; */
 }
 
 .burgers-beef .food-item-indiv-outer:last-child,
@@ -271,6 +277,29 @@ img {
 
 .atomic .food-item-indiv-name {
     width: 25%;
+}
+
+/**********/
+/* Corona */
+/**********/
+
+.corona-outer{
+    background-color: black;
+    margin: 5px 0 10px 0;
+    padding-bottom: 15px;
+}
+
+.corona {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.corona .first-child {
+    padding-left: 20px;
 }
 
 /*************/
@@ -502,12 +531,6 @@ img {
     grid-template-rows: 3;
     column-gap: 180px;
     width: 80%;
-}
-
-.fish-bottom {
-    border-top: none;
-    width: 100%;
-    margin: 20px 0 0px 0;
 }
 
 .fish .food-item-indiv-name,
