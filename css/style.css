@@ -71,6 +71,7 @@ body {
 main {
     max-width: 1200px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .grid-container {
@@ -86,6 +87,7 @@ main {
   
 .main-column-right {
     grid-column: 2 / 3;
+    padding-right: 10px;
   }
 
 
@@ -127,10 +129,12 @@ img {
     width: 35%;
 }
 
+
 .food-item-indiv-name h2 {
     padding: 0;
     margin: 0;
 }
+
 
 .food-item-indiv-price { 
     width: 10%; 
@@ -283,6 +287,10 @@ img {
 .food-item.chips {
     padding-bottom: 0px;
 }
+
+/**********/
+/* Atomic */
+/**********/
 
 .atomic {
     background-color: black;
