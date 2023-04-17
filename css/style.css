@@ -9,7 +9,7 @@ seafood #00afef
 
 /* text sizing */
 h1 {
-    font-size: 48px;
+    font-size: 47px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0px 0 5px 0;
@@ -20,6 +20,7 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
+
 
 .h2-tender {
     margin: 0px;
@@ -68,13 +69,14 @@ body {
 }
 
 main {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 50% 50%;
     gap: 10px;   
     background-color: #ffffff;
 }
@@ -85,6 +87,7 @@ main {
   
 .main-column-right {
     grid-column: 2 / 3;
+    padding-right: 10px;
   }
 
 
@@ -97,11 +100,11 @@ img {
 
 .food-item {  
     padding: 0 10px 10px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 
 .food-item-header {
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -110,30 +113,33 @@ img {
 .food-item-indiv-outer {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: top;
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 2px solid white;
-    padding-bottom: 0px;
+    padding-bottom: 2px;
 }
 
 
-.food-item-indiv-outer-desc {
-    width: 40%;
+.food-item-indiv-desc {
+    width: 50%;
 }
 
 .food-item-indiv-name { 
     width: 35%;
 }
 
+
 .food-item-indiv-name h2 {
     padding: 0;
     margin: 0;
 }
 
+
 .food-item-indiv-price { 
     width: 10%; 
     text-align: right;
+    
 }
 
 /* double Border for headers */
@@ -154,6 +160,12 @@ img {
     left: 0;
 }
 
+.bottom-border {
+    border-top: none;
+    width: 100%;
+    /* margin: 20px 0 0px 0; */
+}
+
 .burgers-beef .food-item-indiv-outer:last-child,
 .burgers-chicken .food-item-indiv-outer:nth-last-child(2),
 .souvlaki .food-item-indiv-outer:last-child,
@@ -166,6 +178,14 @@ img {
     border-bottom: none;
 }
 
+.bullet {
+    color: white; /* change the color */
+    margin-right: 1px; /* add some space between bullet and text */
+}
+
+.wrap.bullet{
+    color: black;
+}
 
 /***********/
 /* Burgers */
@@ -181,12 +201,8 @@ img {
     border: none;
 }
 
-
-.food-item-header-chick {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+.burgers-beef {
+    padding-bottom: 20px;
 }
 
 .burger-addon {
@@ -201,10 +217,11 @@ img {
     width: 35%;
 }
 
+
 .epic-burger-outer .food-item-indiv-name {
-    padding-top: 10px;
     width: 100%;
 }
+
 
 .epic-burger {
     border: 2px dotted white;
@@ -214,28 +231,24 @@ img {
     text-align: center;
 }
 
-.burgers-footer {
-    border: 1px dotted white;
-}
-
 /* circle with image of fries and price */
 .fries-circle-outer {
-    height: 200px;
-    width: 200px;
+    height: 145px;
+    width: 145px;
     position: relative;
     z-index: 1;
 }
 
 .fries-circle-inner-chick {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: -50px;
+    right: -10px;
 }
 
 .fries-circle-inner {
     position: absolute;
     top: -10px;
-    right: 0;
+    right: -5px;
 }
 
 
@@ -252,15 +265,32 @@ img {
     border-bottom: none;
 }
 
-.chips .food-item-indiv-name {
-    width: 55%;
+.chips h2 {
+    padding: 0;
+    margin: 0
 }
 
-.chips .food-item-indiv-price {
-    width: 40%;
-    text-align: left;
+.chips .food-item-indiv-inner {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px 0;
 }
 
+
+.chips .food-item-indiv-outer:last-child {
+    padding-bottom: 0px;
+}
+
+.food-item.chips {
+    padding-bottom: 0px;
+}
+
+/**********/
+/* Atomic */
+/**********/
 
 .atomic {
     background-color: black;
@@ -269,8 +299,82 @@ img {
     margin: 0;
 }
 
+.atomic.food-item {
+    padding-left: 0px;
+}
+
+.atomic .food-item-indiv-outer {
+    align-items: center;
+    border: 1px solid yellow;
+    
+}
+
+
+.atomic .atomic-image {
+    border: 1px solid white;
+    width: 40px;
+}
+
 .atomic .food-item-indiv-name {
-    width: 25%;
+    border: 1px solid white;
+    width: auto;
+    padding: 0px;
+}     
+
+.atomic .food-item-indiv-name h2 {
+    border: 1px solid pink;
+    padding: 0px;
+}
+
+.atomic .food-item-indiv-price {
+    border: 1px solid white;
+    padding-right: 10px;
+}
+
+
+
+
+.atomic .food-item-indiv-desc {
+    border: 1px solid white;
+    padding: 0;
+}
+
+/**********/
+/* Corona */
+/**********/
+
+.corona-outer{
+    background-color: black;
+    margin: 5px 0 10px 0;
+    padding-bottom: 15px;
+}
+
+.corona {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.corona .first-child {
+    padding-left: 20px;
+}
+
+/**********/
+/* Address */
+/**********/
+
+.address-outer {
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*************/
@@ -280,7 +384,6 @@ img {
 .souvlaki {
     background-color: #670000;
     color: white;
-    border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding-top: 20px;
 }
@@ -418,7 +521,7 @@ img {
     padding: 0px;
 }
 
-.food-item-indiv-outer-desc-tender {
+.food-item-indiv-desc-tender {
     grid-area: bottom-row;
     padding: 5px;
 }
@@ -446,12 +549,12 @@ img {
     grid-template-rows: auto 1fr auto;
 }
 
-.food-item-indiv-outer-desc-salad {
+.food-item-indiv-desc-salad {
     align-self: flex-start;
     padding: 2px;
 }
 
-.salads .food-item-indiv-outer-desc {
+.salads .food-item-indiv-desc {
     height: 35%;
 }
 
@@ -504,15 +607,9 @@ img {
     width: 80%;
 }
 
-.fish-bottom {
-    border-top: none;
-    width: 100%;
-    margin: 20px 0 0px 0;
-}
-
 .fish .food-item-indiv-name,
 .fish .food-item-indiv-price,
-.fish .food-item-indiv-outer-desc { 
+.fish .food-item-indiv-desc { 
     width: 100%;
     text-align: left;
     padding: 0;
