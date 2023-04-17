@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin:0px;
 }
 
@@ -120,26 +120,31 @@ img {
     padding-bottom: 2px;
 }
 
-
-.food-item-indiv-desc {
-    width: 50%;
-}
-
 .food-item-indiv-name { 
-    width: 35%;
+    width: 39%;
+    border: 1px solid black;
+    margin-right: 1px;
 }
 
 
 .food-item-indiv-name h2 {
     padding: 0;
     margin: 0;
+    font-size: 24px;
 }
 
 
 .food-item-indiv-price { 
-    width: 10%; 
+    width: 5%; 
     text-align: right;
-    
+    border: 1px solid black;
+    margin-right: 1px;
+}
+
+.food-item-indiv-desc {
+    width: 50%;
+    border: 1px solid black;
+    margin-left: auto;
 }
 
 /* double Border for headers */
@@ -201,6 +206,10 @@ img {
     border: none;
 }
 
+.bacon .food-item-indiv-name {
+    width: 30%;
+}
+
 .burgers-beef {
     padding-bottom: 20px;
 }
@@ -214,7 +223,8 @@ img {
 .epic-burger-outer {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 39%;
+    border: 1px solid white;
 }
 
 
@@ -267,7 +277,8 @@ img {
 
 .chips h2 {
     padding: 0;
-    margin: 0
+    margin: 0;
+    border: 1px solid white;
 }
 
 .chips .food-item-indiv-inner {
@@ -277,7 +288,9 @@ img {
     justify-content: space-between;
     align-items: flex-end;
     padding: 5px 0;
+    border: 1px solid white;
 }
+
 
 
 .chips .food-item-indiv-outer:last-child {
