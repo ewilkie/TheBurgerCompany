@@ -69,7 +69,7 @@ body {
 }
 
 main {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     overflow: auto;
 }
@@ -121,7 +121,7 @@ img {
 }
 
 
-.food-item-indiv-outer-desc {
+.food-item-indiv-desc {
     width: 50%;
 }
 
@@ -299,8 +299,44 @@ img {
     margin: 0;
 }
 
+.atomic.food-item {
+    padding-left: 0px;
+}
+
+.atomic .food-item-indiv-outer {
+    align-items: center;
+    border: 1px solid yellow;
+    
+}
+
+
+.atomic .atomic-image {
+    border: 1px solid white;
+    width: 40px;
+}
+
 .atomic .food-item-indiv-name {
-    width: 25%;
+    border: 1px solid white;
+    width: auto;
+    padding: 0px;
+}     
+
+.atomic .food-item-indiv-name h2 {
+    border: 1px solid pink;
+    padding: 0px;
+}
+
+.atomic .food-item-indiv-price {
+    border: 1px solid white;
+    padding-right: 10px;
+}
+
+
+
+
+.atomic .food-item-indiv-desc {
+    border: 1px solid white;
+    padding: 0;
 }
 
 /**********/
@@ -486,7 +522,7 @@ img {
     padding: 0px;
 }
 
-.food-item-indiv-outer-desc-tender {
+.food-item-indiv-desc-tender {
     grid-area: bottom-row;
     padding: 5px;
 }
@@ -514,12 +550,12 @@ img {
     grid-template-rows: auto 1fr auto;
 }
 
-.food-item-indiv-outer-desc-salad {
+.food-item-indiv-desc-salad {
     align-self: flex-start;
     padding: 2px;
 }
 
-.salads .food-item-indiv-outer-desc {
+.salads .food-item-indiv-desc {
     height: 35%;
 }
 
@@ -574,7 +610,7 @@ img {
 
 .fish .food-item-indiv-name,
 .fish .food-item-indiv-price,
-.fish .food-item-indiv-outer-desc { 
+.fish .food-item-indiv-desc { 
     width: 100%;
     text-align: left;
     padding: 0;
