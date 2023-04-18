@@ -308,7 +308,7 @@ img {
 .atomic {
     background-color: black;
     color: white;
-    border-top: 5px solid white;
+    border-top: 3px solid white;
     margin: 0;
 }
 
@@ -318,38 +318,28 @@ img {
 
 .atomic .food-item-indiv-outer {
     align-items: center;
-    border: 1px solid yellow;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
 .atomic .atomic-image {
-    border: 1px solid white;
     width: 40px;
 }
 
 .atomic .food-item-indiv-name {
-    border: 1px solid white;
-    width: auto;
+    width: 25%;
     padding: 0px;
 }     
 
-.atomic .food-item-indiv-name h2 {
-    border: 1px solid pink;
-    padding: 0px;
-}
-
 .atomic .food-item-indiv-price {
-    border: 1px solid white;
-    padding-right: 10px;
+    width: 12%;
+    margin-right: auto;
 }
-
-
-
 
 .atomic .food-item-indiv-desc {
-    border: 1px solid white;
-    padding: 0;
+    width: 53%;
 }
 
 /**********/
