@@ -122,7 +122,6 @@ img {
 
 .food-item-indiv-name { 
     width: 39%;
-    border: 1px solid black;
     margin-right: 1px;
 }
 
@@ -137,13 +136,11 @@ img {
 .food-item-indiv-price { 
     width: 5%; 
     text-align: right;
-    border: 1px solid black;
     margin-right: 1px;
 }
 
 .food-item-indiv-desc {
     width: 50%;
-    border: 1px solid black;
     margin-left: auto;
 }
 
@@ -224,7 +221,6 @@ img {
     display: flex;
     flex-direction: column;
     width: 39%;
-    border: 1px solid white;
 }
 
 
@@ -278,7 +274,6 @@ img {
 .chips h2 {
     padding: 0;
     margin: 0;
-    border: 1px solid white;
 }
 
 .chips .food-item-indiv-inner {
@@ -288,7 +283,6 @@ img {
     justify-content: space-between;
     align-items: flex-end;
     padding: 5px 0;
-    border: 1px solid white;
 }
 
 
@@ -549,6 +543,7 @@ img {
 .salads h1 {
     font-size: 40px;
 }
+
 .salads-col {
     display: grid;
     grid-template-columns: repeat(3, 22%) 35%;
@@ -592,6 +587,11 @@ img {
     border-top-left-radius: 20px;
     border-bottom: none;
 }
+
+.seafood h1, .fish h1 {
+    font-size: 40px;
+}
+
 
 .seafood, .fish {
     background-color:  #00afef;
