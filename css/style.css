@@ -546,14 +546,12 @@ img {
 /* Salads */
 /**********/
 
-.salads {
-    margin: 0 0 0 15px;
+.salads h1 {
+    font-size: 40px;
 }
-
 .salads-col {
     display: grid;
-    grid-template-columns: repeat(4,auto);
-
+    grid-template-columns: repeat(3, 22%) 35%;
 }
 
 .food-item-indiv-outer-salad {
@@ -561,23 +559,30 @@ img {
     grid-template-rows: auto 1fr auto;
 }
 
+.food-item-indiv-outer-salad:nth-of-type(4) {
+    grid-column: 4 / -1;
+    grid-row: 1 / span 3;
+}
+    
+.food-item-indiv-outer-salad:nth-of-type(4) .food-item-indiv-name-salad {
+    display: inline;
+}
+
 .food-item-indiv-desc-salad {
     align-self: flex-start;
     padding: 2px;
 }
 
-.salads .food-item-indiv-desc {
-    height: 35%;
-}
-
 .salads .dblBorder  {
     border-bottom-color: black;
-    border-top-color: black;
+    border-top: none;
 }
 
 .salads .dblBorder:after {
     border-bottom-color: black;
 }
+
+
 
 /***********/
 /* Seafood */
