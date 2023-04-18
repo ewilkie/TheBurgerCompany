@@ -582,8 +582,6 @@ img {
     border-bottom-color: black;
 }
 
-
-
 /***********/
 /* Seafood */
 /***********/
@@ -598,6 +596,14 @@ img {
 .seafood, .fish {
     background-color:  #00afef;
     color: white;
+}
+
+.seafood .food-item-indiv-name {
+    width: 50%;
+}
+
+.seafood .food-item-indiv-desc {
+    width:39%;
 }
 
 .fish {
