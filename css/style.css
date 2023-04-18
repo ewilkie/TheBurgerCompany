@@ -391,6 +391,10 @@ img {
     padding-top: 20px;
 }
 
+.souvlaki h1 {
+    font-size: 40px;
+}
+
 /* header items */
 .food-item-header-souva {
     position: relative;
@@ -468,6 +472,10 @@ img {
     padding-top: 0px;
 }
 
+.tortilla h1 {
+    font-size: 40px;
+}
+
 .tortilla .dblBorder  {
     border-bottom-color: black;
     border-top-color: black;
@@ -491,15 +499,19 @@ img {
 }
 
 .tenders h1 {
-    font-size: 30px;
+    font-size: 29px;
 } 
+
+.tenders h2 {
+    font-size: 25px;
+}
 
 .tenders-col {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
-    width: 72%;
-    grid-column-gap: 1px;
+    width: 75%;
+    grid-column-gap: 5px;
     grid-row-gap: 10px;
 }
 
@@ -508,25 +520,22 @@ img {
     grid-template-areas:
     "top-left top-right"
     "bottom-row bottom-row";
-    grid-template-columns: auto 35%;
-
+    grid-template-columns: auto 25%; 
+    justify-content: space-between;
 }
 
 .food-item-indiv-name-tender {
     grid-area: top-left;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
 }
 
 .food-item-indiv-price-tender {
     grid-area: top-right;
-    margin: 0px;
-    padding: 0px;
+    justify-self: end;
 }
 
 .food-item-indiv-desc-tender {
     grid-area: bottom-row;
-    padding: 5px;
 }
 
 .tenders .dblBorder {
