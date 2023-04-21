@@ -19,17 +19,12 @@ h2 {
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
-}
-
-
-.h2-tender {
     margin: 0px;
     padding: 0;
-    font-size: 25px;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin:0px;
 }
 
@@ -71,7 +66,7 @@ body {
 main {
     width: 1200px;
     margin: 0 auto;
-    overflow: auto;
+    overflow: none;
 }
 
 .grid-container {
@@ -120,26 +115,28 @@ img {
     padding-bottom: 2px;
 }
 
-
-.food-item-indiv-desc {
-    width: 50%;
-}
-
 .food-item-indiv-name { 
-    width: 35%;
+    width: 39%;
+    margin-right: 1px;
 }
 
 
 .food-item-indiv-name h2 {
     padding: 0;
     margin: 0;
+    font-size: 24px;
 }
 
 
 .food-item-indiv-price { 
-    width: 10%; 
+    width: 5%; 
     text-align: right;
-    
+    margin-right: 1px;
+}
+
+.food-item-indiv-desc {
+    width: 50%;
+    margin-left: auto;
 }
 
 /* double Border for headers */
@@ -201,6 +198,10 @@ img {
     border: none;
 }
 
+.bacon .food-item-indiv-name {
+    width: 30%;
+}
+
 .burgers-beef {
     padding-bottom: 20px;
 }
@@ -214,7 +215,7 @@ img {
 .epic-burger-outer {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 39%;
 }
 
 
@@ -267,7 +268,7 @@ img {
 
 .chips h2 {
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 .chips .food-item-indiv-inner {
@@ -278,7 +279,6 @@ img {
     align-items: flex-end;
     padding: 5px 0;
 }
-
 
 .chips .food-item-indiv-outer:last-child {
     padding-bottom: 0px;
@@ -295,7 +295,7 @@ img {
 .atomic {
     background-color: black;
     color: white;
-    border-top: 5px solid white;
+    border-top: 3px solid white;
     margin: 0;
 }
 
@@ -305,38 +305,28 @@ img {
 
 .atomic .food-item-indiv-outer {
     align-items: center;
-    border: 1px solid yellow;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
 .atomic .atomic-image {
-    border: 1px solid white;
     width: 40px;
 }
 
 .atomic .food-item-indiv-name {
-    border: 1px solid white;
-    width: auto;
+    width: 25%;
     padding: 0px;
 }     
 
-.atomic .food-item-indiv-name h2 {
-    border: 1px solid pink;
-    padding: 0px;
-}
-
 .atomic .food-item-indiv-price {
-    border: 1px solid white;
-    padding-right: 10px;
+    width: 12%;
+    margin-right: auto;
 }
-
-
-
 
 .atomic .food-item-indiv-desc {
-    border: 1px solid white;
-    padding: 0;
+    width: 53%;
 }
 
 /**********/
@@ -386,6 +376,10 @@ img {
     color: white;
     border-bottom-left-radius: 20px;
     padding-top: 20px;
+}
+
+.souvlaki h1 {
+    font-size: 40px;
 }
 
 /* header items */
@@ -465,6 +459,10 @@ img {
     padding-top: 0px;
 }
 
+.tortilla h1 {
+    font-size: 40px;
+}
+
 .tortilla .dblBorder  {
     border-bottom-color: black;
     border-top-color: black;
@@ -488,15 +486,19 @@ img {
 }
 
 .tenders h1 {
-    font-size: 30px;
+    font-size: 29px;
 } 
+
+.tenders h2 {
+    font-size: 25px;
+}
 
 .tenders-col {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
-    width: 72%;
-    grid-column-gap: 1px;
+    width: 75%;
+    grid-column-gap: 5px;
     grid-row-gap: 10px;
 }
 
@@ -505,25 +507,22 @@ img {
     grid-template-areas:
     "top-left top-right"
     "bottom-row bottom-row";
-    grid-template-columns: auto 35%;
-
+    grid-template-columns: auto 25%; 
+    justify-content: space-between;
 }
 
 .food-item-indiv-name-tender {
     grid-area: top-left;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
 }
 
 .food-item-indiv-price-tender {
     grid-area: top-right;
-    margin: 0px;
-    padding: 0px;
+    justify-self: end;
 }
 
 .food-item-indiv-desc-tender {
     grid-area: bottom-row;
-    padding: 5px;
 }
 
 .tenders .dblBorder {
@@ -534,14 +533,13 @@ img {
 /* Salads */
 /**********/
 
-.salads {
-    margin: 0 0 0 15px;
+.salads h1 {
+    font-size: 40px;
 }
 
 .salads-col {
     display: grid;
-    grid-template-columns: repeat(4,auto);
-
+    grid-template-columns: repeat(3, 22%) 35%;
 }
 
 .food-item-indiv-outer-salad {
@@ -549,18 +547,23 @@ img {
     grid-template-rows: auto 1fr auto;
 }
 
+.food-item-indiv-outer-salad:nth-of-type(4) {
+    grid-column: 4 / -1;
+    grid-row: 1 / span 3;
+}
+    
+.food-item-indiv-outer-salad:nth-of-type(4) .food-item-indiv-name-salad {
+    display: inline;
+}
+
 .food-item-indiv-desc-salad {
     align-self: flex-start;
     padding: 2px;
 }
 
-.salads .food-item-indiv-desc {
-    height: 35%;
-}
-
 .salads .dblBorder  {
     border-bottom-color: black;
-    border-top-color: black;
+    border-top: none;
 }
 
 .salads .dblBorder:after {
@@ -578,10 +581,27 @@ img {
     border-bottom: none;
 }
 
+.seafood h1, .fish h1 {
+    font-size: 40px;
+}
+
+
 .seafood, .fish {
     background-color:  #00afef;
     color: white;
 }
+
+.seafood .food-item-indiv-name {
+    width: 50%;
+}
+
+.seafood .food-item-indiv-desc {
+    width:39%;
+}
+
+/********/
+/* Fish */
+/********/
 
 .fish {
     margin: 0 0 10px 0;
@@ -590,32 +610,83 @@ img {
 }
 
 .fish-col {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-.fish-col .food-item-indiv-outer {
-    width: 20%;
-}
-
-.friends {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3;
-    column-gap: 180px;
-    width: 80%;
+    grid-template-columns: 20% 19% auto auto;
+    grid-column-gap: 5px;
 }
 
-.fish .food-item-indiv-name,
-.fish .food-item-indiv-price,
-.fish .food-item-indiv-desc { 
-    width: 100%;
-    text-align: left;
-    padding: 0;
-
+.fish-col-left {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
 }
 
+.fish-col-middle {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+.fish-col-right1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 1px solid white;
+}
+
+.fish-col-right2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 1px solid red;
+}
+
+.fish-col h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*
+.fish-col-right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    border: 1px solid black;
+}
+
+.fish-col-right-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 1px solid red;
+}
+
+.fish-col-right-item h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+
+.grid-item4 {
+    grid-row: 2/3;
+}
+  
+.grid-item5 {
+    grid-row: 3 / 4;
+}
+
+*/
+.fish p {
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
 
 /***********/
 /* Footer */
