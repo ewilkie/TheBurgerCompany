@@ -618,13 +618,11 @@ img {
 .fish-col-left {
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
 }
 
 .fish-col-middle {
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
 }
 
 .fish-col-right1 {
@@ -632,7 +630,6 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    border: 1px solid white;
 }
 
 .fish-col-right2 {
@@ -640,7 +637,6 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    border: 1px solid red;
 }
 
 .fish-col h4 {
@@ -649,39 +645,6 @@ img {
     margin: 0;
 }
 
-/*
-.fish-col-right {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-auto-flow: column;
-    border: 1px solid black;
-}
-
-.fish-col-right-item {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: 1px solid red;
-}
-
-.fish-col-right-item h4 {
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-bottom: 0px;
-    padding: 0px;
-    border: 1px solid black;
-}
-
-
-.grid-item4 {
-    grid-row: 2/3;
-}
-  
-.grid-item5 {
-    grid-row: 3 / 4;
-}
-
-*/
 .fish p {
     margin-top: 8px;
     text-transform: uppercase;
