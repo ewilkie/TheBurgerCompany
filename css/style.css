@@ -665,20 +665,35 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
+
+
+.logo-outer {
+    position: relative;
+}
+
 
 .logo {
+    position: absolute; 
+    bottom: 0px;
     height: 150px;
-    border: 1px solid white;
+    width: 150px;
 }
-
 
 .left{
     transform: rotate(-35deg);
+    left:0;
 }
 
 .right{
     transform: rotate(35deg);
+    right:0;
+}
+
+.footer-inner {
+    border: 1px solid white;
+    width: 70%;
 }
 
 footer h3 {
