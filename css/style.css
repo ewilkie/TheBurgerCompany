@@ -659,18 +659,15 @@ img {
 footer {
     background-color: black;
     height: 100px;
-    /*
-    width: 100%;
-    margin-top: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 
 .logo-outer {
-    position: relative;
+    position: relative;    
+
 }
 
 
@@ -694,6 +691,14 @@ footer {
 .footer-inner {
     border: 1px solid white;
     width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.qr_image {
+    height: 100%;
+    border: 1px solid yellow;
 }
 
 footer h3 {
