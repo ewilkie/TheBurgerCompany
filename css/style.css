@@ -427,20 +427,18 @@ img {
 }
 
 .double-souva {
-    width: 150px;
-    height: 45px;
+    width: 120px;
+    height: 30px;
     background-color: #CB7817;
     border-radius: 20px;
-    padding: 5px;
-    margin-top: 25px;
-
+    padding: 5px 5px 8px 5px;
     position: absolute;
-    top: -20px;
-    left: 75%;
+    top: 4px;
+    right: 0;
 }
 
 .double-souva-text {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -450,7 +448,7 @@ img {
     top: -10px;
     left: -15px;
     transform: rotate(-30deg);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
