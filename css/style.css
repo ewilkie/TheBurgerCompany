@@ -690,11 +690,9 @@ footer {
 }
 
 .footer-inner {
-    border: 1px solid white;
     width: 75%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
 }
 
 .footer-scan {
@@ -710,7 +708,7 @@ footer {
     text-transform: none;
 }
 
-.qr_image {
+.footer-qrimage {
     height: 100px;
     width: 100px;
     display: flex;
@@ -719,13 +717,23 @@ footer {
 }
 
 .footer-tlf {
-    border: 1px solid pink;
     display: flex;
     justify-content: center;
     text-align: center;
     padding-left: 20px;
 }
 
+.footer-website {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
 
+.footer-website h3 {
+    font-weight: 300;
+}
 
 
