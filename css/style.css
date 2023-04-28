@@ -696,6 +696,19 @@ footer {
     align-items: flex-end;
 }
 
+.footer-scan {
+    width: 60px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-scan h2 {
+    color: white;
+    text-transform: none;
+}
+
 .qr_image {
     height: 100%;
     border: 1px solid yellow;
