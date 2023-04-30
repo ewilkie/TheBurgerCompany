@@ -440,7 +440,7 @@ img {
     margin-top: 0px;
 }
 
-.gluten-free-souva {
+.souvlaki .gluten-free {
     /* margin-top: 20px; */
     width: 70px;
     height: 70px;
@@ -452,7 +452,7 @@ img {
     right: 150px;
 }
 
-.gluten-free-souva-text {
+.souvlaki .gluten-free-text {
     color: black;
     width: 65px;
     transform: rotate(15deg);
@@ -461,15 +461,14 @@ img {
 
 }
 
-.gluten-free-souva-price {
+.souvlaki .gluten-free-price {
     color: black;
     width: 65px;
     transform: rotate(15deg);
-
     font-size: 14px;
 }
 
-.check-souva {
+.souvlaki .check {
     color: black;
     font-size: 50px;
     transform: rotate(15deg);
