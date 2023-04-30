@@ -350,6 +350,7 @@ img {
     background-color: black;
     margin: 5px 0 10px 0;
     padding-bottom: 15px;
+    font-family: 'KBWritersBlock.ttf';
 }
 
 .corona {
@@ -361,13 +362,14 @@ img {
     background-color: black;
 }
 
+
 .corona .first-child {
-    padding-left: 20px;
+    margin: 5px 0 0 10px;
 }
 
 
 .corona h2 {
-    font-family: 'KBWritersBlock.ttf';
+    
     font-size: 33px;
     margin: 5px 10px 0 0;
 }
