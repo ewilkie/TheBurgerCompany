@@ -286,6 +286,47 @@ img {
     margin: 0;
 }
 
+.dipping-sauce-outer {
+    position: absolute;
+    border: 1px solid yellow;
+    right: 10px;
+}
+
+.dipping-sauce {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+.dipping-sauce::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  
+.dipping-sauce::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+
 .chips .food-item-indiv-inner {
     width: 72%;
     display: flex;
