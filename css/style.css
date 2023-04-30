@@ -361,8 +361,12 @@ img {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+}
 
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
 }
 
 .address h3 {
@@ -370,18 +374,10 @@ img {
     font-weight: 300;
 }
 
-.address {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    
-}
-
 .opening-hrs {
     height: 110px;
-    width: 440px;
     margin-top: 10px;
-    margin-right: 50px;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -395,26 +391,12 @@ img {
 .opening-hrs h3 {
     text-transform: uppercase;
     font-weight: 300;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .opening-hrs b {
     font-weight: 700;
 }
-
-/*
-.times {
-    border: 1px solid purple;
-    margin-top: 20px;
-    margin-left: 70px;
-    height:
-}
-
-
-.opening-hrs .b {
-    font-weight: 700;
-}
-*/
 
 /*************/
 /* Souvalaki */
