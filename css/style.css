@@ -525,6 +525,40 @@ img {
     border-bottom-color: black;
 }
 
+.food-item-header-wrap {
+    position: relative;
+}
+
+
+.tortilla .gluten-free {
+    /* margin-top: 20px; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+
+    position: absolute;
+    top: -5px;
+    right: 180px;
+}
+
+.tortilla .gluten-free-text {
+    color: white;
+    transform: rotate(15deg);
+    padding: 15px 0 0 10px; 
+    font-size: 10px;
+}
+
+.tortilla .check {
+    color: white;
+    font-size: 30px;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 33px;
+    left: 13px;
+}
+
+
 
 /***********/
 /* Tenders */
