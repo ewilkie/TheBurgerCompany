@@ -353,27 +353,59 @@ img {
     padding-left: 20px;
 }
 
-/**********/
-/* Address */
-/**********/
+/***********/
+/* Details */
+/***********/
 
-.address-outer {
-    padding-left: 60px;
-    padding-bottom: 20px;
+.details-outer {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     border: 1px solid red;
+}
+
+.details-outer h3 {
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .address {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     border: 1px solid black;
 }
 
-.address h3 {
-    text-transform: uppercase;
-    font-weight: 300;
+.opening-hrs {
+    border: 1px solid blue;
+    
+    height: 110px;
+    width: 530px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+.opening-hrs h2 {
+    font-weight: 700;
+}
+
+/*
+.times {
+    border: 1px solid purple;
+    margin-top: 20px;
+    margin-left: 70px;
+    height:
+}
+
+
+.opening-hrs .b {
+    font-weight: 700;
+}
+*/
 
 /*************/
 /* Souvalaki */
