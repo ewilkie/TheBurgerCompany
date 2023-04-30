@@ -362,10 +362,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    border: 1px solid red;
+
 }
 
-.details-outer h3 {
+.address h3 {
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -374,22 +374,31 @@ img {
     display: flex;
     align-items: center;
     justify-content: right;
-    border: 1px solid black;
+    
 }
 
 .opening-hrs {
-    border: 1px solid blue;
-    
     height: 110px;
-    width: 530px;
+    width: 440px;
     margin-top: 10px;
-
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
 }
 
 .opening-hrs h2 {
+    font-weight: 700;
+}
+
+.opening-hrs h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 60px;
+}
+
+.opening-hrs b {
     font-weight: 700;
 }
 
