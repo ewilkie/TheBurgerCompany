@@ -1,4 +1,4 @@
-/* colors
+/* colours
 burgers #ee1d23
 chips #9e0b10
 fries #000000
@@ -13,8 +13,8 @@ seafood #00afef
 
 @font-face {
     font-family: 'KBWritersBlock.ttf';
-    src: url('/fonts/KBWritersBlock.ttf') format('truetype'),
-    url('../fonts/KBWritersBlock.ttf') format('truetype');
+    src: url('/fonts/KBWritersBlock.ttf') format('truetype'), /* for local support */
+    url('../fonts/KBWritersBlock.ttf') format('truetype'); /* for github */
   }
 
 
@@ -70,6 +70,7 @@ b {
 /* main html elements */
 /**********************/
 
+
 body {
     background-color: #c6401b;
     font-family: 'Oswald', 'KBWritersBlock.ttf';
@@ -80,7 +81,6 @@ body {
 main {
     width: 1200px;
     margin: 0 auto;
-    overflow: none;
 }
 
 .grid-container {
@@ -190,8 +190,8 @@ img {
 }
 
 .bullet {
-    color: white; /* change the color */
-    margin-right: 1px; /* add some space between bullet and text */
+    color: white; 
+    margin-right: 1px; /* space between bullet and text */
 }
 
 .wrap.bullet{
@@ -863,14 +863,13 @@ footer {
 
 
 .logo-outer {
-    position: relative;    
-
+    position: relative;
 }
 
 
 .logo {
     position: absolute; 
-    bottom: 0px;
+    bottom:0;
     height: 150px;
     width: 150px;
 }
@@ -910,13 +909,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 20px;
 }
 
 .footer-tlf {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 20px;
+    text-align: center;  
 }
 
 .footer-website {
