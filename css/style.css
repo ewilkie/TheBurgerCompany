@@ -286,47 +286,6 @@ img {
     margin: 0;
 }
 
-.dipping-sauce-outer {
-    position: absolute;
-    border: 1px solid yellow;
-    right: 10px;
-}
-
-.dipping-sauce {
-    width: 150px;
-    height: 150px;
-    background-color: black;
-    border-radius: 50%;
-    border: 1px solid white;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
-.dipping-sauce::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 2px solid black;
-    border-radius: 50%;
-  }
-  
-.dipping-sauce::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 1px solid white;
-    border-radius: 50%;
-  }
-
-
 .chips .food-item-indiv-inner {
     width: 72%;
     display: flex;
@@ -342,6 +301,58 @@ img {
 
 .food-item.chips {
     padding-bottom: 0px;
+}
+
+
+/* for positioning cicle inside chips div */
+.dipping-sauce-outer {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+}
+
+/* main black circle */
+.dipping-sauce {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* outer border */  
+.dipping-sauce::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+.dipping-sauce-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    transform: rotate(-10deg);
+    text-align: center;
+    color: white;
+}
+
+.dipping-sauce-text h3 {
+    font-size: 20px;
+}
+
+.dipping-sauce-text h4 {
+    font-size: 16px;
 }
 
 /**********/
