@@ -305,14 +305,14 @@ img {
 
 
 /* for positioning cicle inside chips div */
-.dipping-sauce-outer {
+.chips .dipping-sauce-outer {
     position: absolute;
     right: 10px;
     top: 80px;
 }
 
 /* main black circle */
-.dipping-sauce {
+.chips .dipping-sauce {
     width: 150px;
     height: 150px;
     background-color: black;
@@ -325,7 +325,7 @@ img {
   }
 
 /* outer border */  
-.dipping-sauce::after {
+.chips .dipping-sauce::after {
     content: "";
     display: block;
     position: absolute;
@@ -337,7 +337,7 @@ img {
     border-radius: 50%;
   }
 
-.dipping-sauce-text {
+.chips .dipping-sauce-text {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -347,11 +347,11 @@ img {
     color: white;
 }
 
-.dipping-sauce-text h3 {
+.chips .dipping-sauce-text h3 {
     font-size: 20px;
 }
 
-.dipping-sauce-text h4 {
+.chips .dipping-sauce-text h4 {
     font-size: 16px;
 }
 
@@ -623,6 +623,7 @@ img {
     color: white;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    position: relative;
 }
 
 .tenders h1 {
@@ -668,6 +669,62 @@ img {
 .tenders .dblBorder {
     border-top: none;
 }
+
+/* for positioning cicle inside chips div */
+.tenders .dipping-sauce-outer {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+}
+
+/* main black circle */
+.tenders .dipping-sauce {
+    width: 140px;
+    height: 140px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* outer border */  
+.tenders .dipping-sauce::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+.tenders .dipping-sauce-text {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    right: 25px;
+    transform: rotate(-10deg);
+    text-align: center;
+    color: white;
+}
+
+.tenders .dipping-sauce-text h3 {
+    font-size: 16px;
+}
+
+.tenders .dipping-sauce-text b {
+    font-weight: 700;
+}
+
+.tenders .dipping-sauce-text h4 {
+    font-size: 12px;
+}
+
 
 /**********/
 /* Salads */
