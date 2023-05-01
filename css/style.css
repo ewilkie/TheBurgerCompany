@@ -14,7 +14,7 @@ seafood #00afef
 @font-face {
     font-family: 'KBWritersBlock.ttf';
     src: url('/fonts/KBWritersBlock.ttf') format('truetype'),
-    url('fonts/KBWritersBlock.ttf') format('truetype');
+    url('../fonts/KBWritersBlock.ttf') format('truetype');
   }
 
 
