@@ -777,6 +777,21 @@ img {
     padding-top: 10px;
     border-top-left-radius: 20px;
     border-bottom: none;
+
+    position: relative;
+}
+
+.grilled {
+    position: absolute;
+    right: 70px;
+    top: 18px;
+    width: 200px;
+    
+}
+
+.seafood .grilled h4 {
+    font-weight: 300px;
+    font-size: 15px;
 }
 
 .seafood h1, .fish h1 {
