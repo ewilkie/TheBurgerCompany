@@ -12,8 +12,9 @@ seafood #00afef
 /********************/
 
 @font-face {
-    font-family: "KBWritersBlock";
-    src: url("../TheBurgerCompany/fonts/KBWritersBlock.ttf") format('truetype');
+    font-family: 'KBWritersBlock.ttf';
+    src: url('/fonts/KBWritersBlock.ttf') format('truetype'),
+    url('fonts/KBWritersBlock.ttf') format('truetype');
   }
 
 
@@ -71,7 +72,7 @@ b {
 
 body {
     background-color: #c6401b;
-    font-family: 'Oswald', 'KBWritersBlock';
+    font-family: 'Oswald', 'KBWritersBlock.ttf';
     margin: 0;
     padding: 0;
 }
