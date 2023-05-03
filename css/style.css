@@ -79,17 +79,18 @@ body {
 }
 
 main {
-    width: 1200px;
+    /* width: 1200px; for responisveness */
     margin: 0 auto;
     overflow-y: clip;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;   
     background-color: #ffffff;
 }
+
 
 .main-column-left {
     grid-column: 1 / 2;
@@ -97,7 +98,6 @@ main {
   
 .main-column-right {
     grid-column: 2 / 3;
-    padding-right: 10px;
   }
 
 img {
@@ -945,3 +945,86 @@ footer {
 }
 
 
+
+/******************/
+/* repsonsiveness */
+/******************/
+
+/* For large laptops and desktops */
+@media screen and (min-width: 1200px) {
+    main {
+        width: 1200px;
+    }
+
+    /*
+    .grid-container {
+        grid-template-areas:
+          "burgers souvlaki"
+          "burgers tortilla"
+          "chips tenders"
+          "atomic salads"
+          "corona seafood"
+          "details fish"; /* Define the grid template areas 
+      }
+    */
+      
+}
+
+/* For small laptops, desktops and mobile */ 
+@media screen and (max-width: 1199px) {
+    main {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .main-column-left {
+        grid-column: 1 / 2;
+      }
+      
+    .main-column-right {
+        grid-column: 1 / 2;
+      }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 620px) {
+
+    .food-item-indiv-outer {
+        /*display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 2px solid white;
+        padding-bottom: 2px; */
+        display: grid;
+        grid-template-areas:
+        "top-left top-right"
+        "bottom-row bottom-row";
+        justify-content: space-between;
+    }
+
+    .food-item-indiv-name { 
+        grid-area: top-left;
+    }
+    
+    .food-item-indiv-price { 
+        grid-area: top-right;
+    }
+    
+    .food-item-indiv-desc {
+        grid-area: bottom-row;
+    }
+    /*
+    .burgers {
+        background-color: black;
+        order: 1;
+    }
+
+    .chips {
+        order:2
+    } */
+}
