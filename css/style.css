@@ -206,6 +206,7 @@ img {
     background-color: #ee1d23;
     color: white;
     border-bottom-right-radius: 20px;
+    order: 1; /* for responsive column rearrange */
 }
 
 .bacon {
@@ -280,6 +281,7 @@ img {
     border-bottom: none;
 
     position: relative;
+    order: 2; /* for responsive column rearrange */
 }
 
 .chips h2 {
@@ -365,6 +367,8 @@ img {
     color: white;
     border-top: 3px solid white;
     margin: 0;
+
+    order: 3; /* for responsive column rearrange */
 }
 
 .atomic.food-item {
@@ -406,6 +410,8 @@ img {
     margin: 5px 0 10px 0;
     padding-bottom: 15px;
     font-family: 'KBWritersBlock.ttf';
+
+    order: 4; /* for responsive column rearrange */
 }
 
 .corona {
@@ -437,6 +443,8 @@ img {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+
+    order: 5; /* for responsive column rearrange */
 }
 
 .address {
@@ -483,6 +491,8 @@ img {
     color: white;
     border-bottom-left-radius: 20px;
     padding-top: 20px;
+
+    order: 6; /* for responsive column rearrange */
 }
 
 .souvlaki h1 {
@@ -564,6 +574,7 @@ img {
 
 .tortilla {
     padding-top: 0px;
+    order: 7; /* for responsive column rearrange */
 }
 
 .tortilla h1 {
@@ -625,6 +636,7 @@ img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
+    order: 8; /* for responsive column rearrange */
 }
 
 .tenders h1 {
@@ -731,6 +743,10 @@ img {
 /* Salads */
 /**********/
 
+.salads {
+    order: 9; /* for responsive column rearrange */
+}
+
 .salads h1 {
     font-size: 40px;
 }
@@ -779,6 +795,7 @@ img {
     border-bottom: none;
 
     position: relative;
+    order: 10; /* for responsive column rearrange */
 }
 
 .grilled {
@@ -820,6 +837,7 @@ img {
     margin: 0 0 10px 0;
     border-bottom-left-radius: 20px;
     border-top: none;
+    order: 11; /* for responsive column rearrange */
 }
 
 .fish-col {
@@ -982,24 +1000,75 @@ footer {
 
     .main-column-left {
         grid-column: 1 / 2;
+        order:1;
       }
       
     .main-column-right {
         grid-column: 1 / 2;
+        order:2;
       }
+
+     /* change the order of the columns */ 
+     
+     .burgers {
+        order: 1;
+     }
+
+     .souvlaki {
+        order: -1;
+     }
+
+     .tortilla {
+        order: 3;
+     }
+
+     .tenders {
+        order: 4;
+     }
+
+     .salads {
+        order: 5;
+     }
+
+     .seafood {
+        order: 6;
+     }
+
+     .fish {
+        order: 7;
+     }
+
+     .chips {
+        order: 8;
+     }
+
+     .atomic {
+        order: 9;
+     }
+
+     .corona {
+        order: 10;
+     }
+
+     .details-outer {
+        order: 11;
+     }
+
+
+
 }
 
-/* For mobile devices */
+/* For mobile devices
 @media screen and (max-width: 620px) {
 
     .food-item-indiv-outer {
-        /*display: flex;
+        display: flex;
         flex-direction: row;
         align-items: top;
         justify-content: space-between;
         flex-wrap: wrap;
         border-bottom: 2px solid white;
-        padding-bottom: 2px; */
+        padding-bottom: 2px;
         display: grid;
         grid-template-areas:
         "top-left top-right"
@@ -1018,7 +1087,7 @@ footer {
     .food-item-indiv-desc {
         grid-area: bottom-row;
     }
-    /*
+    
     .burgers {
         background-color: black;
         order: 1;
@@ -1026,5 +1095,7 @@ footer {
 
     .chips {
         order:2
-    } */
+    } 
 }
+
+*/
