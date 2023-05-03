@@ -91,7 +91,7 @@ main {
     background-color: #ffffff;
 }
 
-
+/*
 .main-column-left {
     grid-column: 1 / 2;
   }
@@ -100,6 +100,7 @@ main {
     grid-column: 2 / 3;
   }
 
+  */
 img {
     max-height: 100%;
     max-width: 100%; 
@@ -996,17 +997,8 @@ footer {
 
     .grid-container {
         grid-template-columns: 1fr; 
+        grid-gap: 0px;
     }
-
-    .main-column-left {
-        grid-column: 1 / 2;
-        order:1;
-      }
-      
-    .main-column-right {
-        grid-column: 1 / 2;
-        order:2;
-      }
 
      /* change the order of the columns */ 
      
@@ -1015,7 +1007,7 @@ footer {
      }
 
      .souvlaki {
-        order: -1;
+        order: 2;
      }
 
      .tortilla {
@@ -1046,7 +1038,7 @@ footer {
         order: 9;
      }
 
-     .corona {
+     .corona-outer {
         order: 10;
      }
 
