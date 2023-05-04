@@ -1011,8 +1011,8 @@ footer {
     }
 
     .grid-container {
-        grid-template-columns: 1fr; 
-        grid-gap: 0px;
+        display: flex;
+        flex-direction: column;
     }
 
      /* change the order of the columns */ 
