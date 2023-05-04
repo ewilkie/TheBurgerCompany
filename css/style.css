@@ -85,11 +85,27 @@ main {
 }
 
 .grid-container {
+
+    display:flex;
+    flex-direction: row;
+    /*
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;   
+    align-content: start;
+    /* gap: 10px; */   
     background-color: #ffffff;
 }
+
+.main-column-left {
+    grid-column: 1 ;
+    flex-basis: 50%;
+    margin-right: 5px;
+  }
+  
+.main-column-right {
+    grid-column: 0;
+    flex-basis: 50%;
+  }
 
 /*
 .main-column-left {
@@ -207,7 +223,7 @@ img {
     background-color: #ee1d23;
     color: white;
     border-bottom-right-radius: 20px;
-    order: 1; /* for responsive column rearrange */
+    grid-column: 1 /2 ;
 }
 
 .bacon {
@@ -282,7 +298,7 @@ img {
     border-bottom: none;
 
     position: relative;
-    order: 2; /* for responsive column rearrange */
+    grid-column: 1 /2 ;
 }
 
 .chips h2 {
@@ -368,8 +384,7 @@ img {
     color: white;
     border-top: 3px solid white;
     margin: 0;
-
-    order: 3; /* for responsive column rearrange */
+    grid-column: 1;
 }
 
 .atomic.food-item {
@@ -411,8 +426,8 @@ img {
     margin: 5px 0 10px 0;
     padding-bottom: 15px;
     font-family: 'KBWritersBlock.ttf';
+    grid-column: 1;
 
-    order: 4; /* for responsive column rearrange */
 }
 
 .corona {
@@ -444,8 +459,8 @@ img {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    grid-column: 1;
 
-    order: 5; /* for responsive column rearrange */
 }
 
 .address {
@@ -492,8 +507,8 @@ img {
     color: white;
     border-bottom-left-radius: 20px;
     padding-top: 20px;
-
-    order: 6; /* for responsive column rearrange */
+    grid-column: 2 /3;
+    align-self: start;
 }
 
 .souvlaki h1 {
@@ -575,7 +590,7 @@ img {
 
 .tortilla {
     padding-top: 0px;
-    order: 7; /* for responsive column rearrange */
+    grid-column: 2;
 }
 
 .tortilla h1 {
@@ -637,7 +652,7 @@ img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
-    order: 8; /* for responsive column rearrange */
+    grid-column: 2;
 }
 
 .tenders h1 {
@@ -745,7 +760,7 @@ img {
 /**********/
 
 .salads {
-    order: 9; /* for responsive column rearrange */
+    grid-column: 2;
 }
 
 .salads h1 {
@@ -796,7 +811,7 @@ img {
     border-bottom: none;
 
     position: relative;
-    order: 10; /* for responsive column rearrange */
+    grid-column: 2;
 }
 
 .grilled {
@@ -838,7 +853,7 @@ img {
     margin: 0 0 10px 0;
     border-bottom-left-radius: 20px;
     border-top: none;
-    order: 11; /* for responsive column rearrange */
+    grid-column: 2;
 }
 
 .fish-col {
