@@ -308,7 +308,7 @@ img {
     border-bottom: none;
 
     position: relative;
-    grid-column: 1 /2 ; 
+    align-self: start;
 }
 
 .chips h2 {
