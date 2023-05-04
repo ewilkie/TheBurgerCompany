@@ -90,17 +90,9 @@ main {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);   
     align-content: start;
-    /*
-    display:flex;
-    flex-direction: row;
-    
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-content: start;
-    /* gap: 10px; */   
+    grid-gap: 5px;
     background-color: #ffffff;
 }
 
@@ -116,29 +108,6 @@ main {
     grid-row: span 1;
 }
 
-/*
-.main-column-left {
-    grid-column: 1 ;
-    flex-basis: 50%;
-    margin-right: 5px;
-  }
-  
-.main-column-right {
-    grid-column: 0;
-    flex-basis: 50%;
-  }
-*/
-
-/*
-.main-column-left {
-    grid-column: 1 / 2;
-  }
-  
-.main-column-right {
-    grid-column: 2 / 3;
-  }
-
-  */
 img {
     max-height: 100%;
     max-width: 100%; 
@@ -245,8 +214,6 @@ img {
     background-color: #ee1d23;
     color: white;
     border-bottom-right-radius: 20px;
-    /* grid-column: 1 /2 ; */
-    align-self:start;
 }
 
 .bacon {
@@ -321,7 +288,7 @@ img {
     border-bottom: none;
 
     position: relative;
-    align-self: start;
+    
 }
 
 .chips h2 {
@@ -527,7 +494,7 @@ img {
     color: white;
     border-bottom-left-radius: 20px;
     padding-top: 20px;
-    align-self: start;
+
 
 }
 
@@ -780,12 +747,6 @@ img {
 /* Salads */
 /**********/
 
-/*
-.salads {
-    grid-column: 2;
-}
-*/
-
 .salads h1 {
     font-size: 40px;
 }
@@ -929,8 +890,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
 }
 
 
@@ -1017,20 +976,7 @@ footer {
     footer {
         margin: 0 auto;
         width: 1200px;
-    }
-
-    /*
-    .grid-container {
-        grid-template-areas:
-          "burgers souvlaki"
-          "burgers tortilla"
-          "chips tenders"
-          "atomic salads"
-          "corona seafood"
-          "details fish"; /* Define the grid template areas 
-      }
-    */
-      
+    }      
 }
 
 /* For small laptops, desktops and mobile */ 
@@ -1043,52 +989,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
-     /* change the order of the columns */ 
-     
-     .burgers {
-        order: 1;
-     }
-
-     .souvlaki {
-        order: 2;
-     }
-
-     .tortilla {
-        order: 3;
-     }
-
-     .tenders {
-        order: 4;
-     }
-
-     .salads {
-        order: 5;
-     }
-
-     .seafood {
-        order: 6;
-     }
-
-     .fish {
-        order: 7;
-     }
-
-     .chips {
-        order: 8;
-     }
-
-     .atomic {
-        order: 9;
-     }
-
-     .corona-outer {
-        order: 10;
-     }
-
-     .details-outer {
-        order: 11;
-     }
 
 
 
