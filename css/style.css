@@ -104,11 +104,11 @@ main {
 }
 
 .align-1 {
-    grid-row: span 2;
+    grid-row: span 1;
 }
 
 .align-2 {
-    grid-row: span 1;
+    grid-row: span 2;
 }
 
 .align-3 {
