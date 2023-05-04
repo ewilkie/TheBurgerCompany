@@ -103,6 +103,18 @@ main {
     background-color: #ffffff;
 }
 
+.align-1 {
+    grid-row: span 2;
+}
+
+.align-2 {
+    grid-row: span 1;
+}
+
+.align-3 {
+    grid-row: span 1;
+}
+
 /*
 .main-column-left {
     grid-column: 1 ;
