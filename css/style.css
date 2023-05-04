@@ -515,8 +515,7 @@ img {
     border-bottom-left-radius: 20px;
     padding-top: 20px;
     align-self: start;
-    grid-row: span 2;
-    border: 1px solid black;
+
 }
 
 .souvlaki h1 {
@@ -598,9 +597,8 @@ img {
 
 .tortilla {
     padding-top: 0px;
-    grid-row: span 1;
+    
     align-self: start;
-    border: 1px solid red;
 }
 
 .tortilla h1 {
@@ -662,7 +660,7 @@ img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
-    grid-column: 2;
+
 }
 
 .tenders h1 {
@@ -769,9 +767,11 @@ img {
 /* Salads */
 /**********/
 
+/*
 .salads {
     grid-column: 2;
 }
+*/
 
 .salads h1 {
     font-size: 40px;
@@ -821,7 +821,6 @@ img {
     border-bottom: none;
 
     position: relative;
-    grid-column: 2;
 }
 
 .grilled {
@@ -863,7 +862,6 @@ img {
     margin: 0 0 10px 0;
     border-bottom-left-radius: 20px;
     border-top: none;
-    grid-column: 2;
 }
 
 .fish-col {
