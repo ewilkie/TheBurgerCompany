@@ -834,7 +834,53 @@ img {
     margin: 0 0 10px 0;
     border-bottom-left-radius: 20px;
     border-top: none;
+
+    position: relative;
 }
+
+.fish .extra-outer {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+}
+
+/* main black circle */
+.fish .extra {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+/* outer border */  
+.fish .extra::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+.fish .extra-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    transform: rotate(-10deg);
+    text-align: center;
+    color: white;
+}
+
 
 .fish-col {
     display: grid;
