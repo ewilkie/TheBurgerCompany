@@ -855,21 +855,23 @@ img {
 .fish-col-right1 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+
 }
 
+/*
 .fish-col-right2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
+*/
 
 .fish-col h4 {
     text-transform: uppercase;
     font-size: 18px;
     margin: 0;
+    padding: 2px 0px;
 }
 
 .fish p {
