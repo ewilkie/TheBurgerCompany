@@ -840,14 +840,14 @@ img {
 
 .fish .extra-outer {
     position: absolute;
-    right: 10px;
-    top: 80px;
+    right: 5px;
+    top: 10px;
 }
 
 /* main black circle */
 .fish .extra {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: black;
     border-radius: 50%;
     position: relative;  
@@ -876,9 +876,14 @@ img {
     top: 20px;
     left: 20px;
     right: 20px;
-    transform: rotate(-10deg);
+
     text-align: center;
     color: white;
+    
+}
+
+.fish .extra-text h5 {
+    font-size: 60px;
 }
 
 
