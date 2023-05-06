@@ -1043,6 +1043,10 @@ footer {
         flex-direction: column;
     }
 
+    .tenders-col {
+        width: 100%;
+    }
+
     .tenders .dipping-sauce-outer {
         display: none;
     }
