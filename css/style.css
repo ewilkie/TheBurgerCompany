@@ -689,7 +689,7 @@ img {
 .tenders .dipping-sauce-outer {
     position: absolute;
     right: 5px;
-    top: 45px;
+    bottom: 5px;
 }
 
 /* main black circle */
@@ -1019,7 +1019,7 @@ footer {
 }
 
 /* For small laptops, desktops and mobile */ 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 620px) and (max-width: 1199px) {
     main {
         width: 100%;
     }
@@ -1029,13 +1029,25 @@ footer {
         flex-direction: column;
     }
 
-
-
 }
 
-/* For mobile devices
-@media screen and (max-width: 620px) {
+/* For mobile devices */
+@media screen and (max-width: 619px) {
 
+    main {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tenders .dipping-sauce-outer {
+        display: none;
+    }
+
+    /*
     .food-item-indiv-outer {
         display: flex;
         flex-direction: row;
@@ -1068,9 +1080,6 @@ footer {
         order: 1;
     }
 
-    .chips {
-        order:2
-    } 
+    */
 }
 
-*/
