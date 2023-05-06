@@ -1047,9 +1047,14 @@ footer {
         width: 100%;
     }
 
-    .tenders .dipping-sauce-outer {
+    .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer {
         display: none;
     }
+
+    .chips .food-item-indiv-inner {
+        width: 100%
+    }
+
 
     /*
     .food-item-indiv-outer {
