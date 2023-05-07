@@ -1088,19 +1088,20 @@ footer {
         "top-left top-right"
         "bottom-row bottom-row";
         flex-wrap: wrap;
-        grid-template-columns: auto 10%;
+        grid-template-columns: auto auto;
         justify-content: space-between;
     }
      
     .food-item-indiv-name { 
         grid-area: top-left;
-        width: 80%;
+        width: auto;
         border: 1px solid black;
     }
     
     .food-item-indiv-price { 
         grid-area: top-right;
-        width: 10%;
+        width: auto;
+        margin-right: 1px;
         border: 1px solid black;
     }
     
