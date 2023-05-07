@@ -926,14 +926,23 @@ img {
 /**********/
 
 footer {
+    display: flex;
+    flex-direction: column;
+    /* remove space at bottom of page caused by rotation of logo */
+    overflow:clip;
+}
+
+.footer-top {
+    height: 50px;
+    background-color: white;
+}
+
+.footer-bottom {
     background-color: black;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* remove space at bottom of page 
-    overflow-y: clip; 
-    z-index: 10; */
 }
 
 
@@ -949,6 +958,7 @@ footer {
     position: absolute; 
     /* need this because rotating will cause bottom of logo to be below footer */
     bottom: calc(-150px + 100% + 50px);
+
 }
 
 .left{
