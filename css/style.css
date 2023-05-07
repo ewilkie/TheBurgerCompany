@@ -929,19 +929,25 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* remove space at bottom of page */
+    overflow-y: clip; 
 }
 
 
 .logo-outer {
-    position: relative;
+    position: relative;    
+    /* need space on outer border so that image size is responsive */
+    height: 150px;
+    width: 150px;
+    border: 1px solid purple;
+    z-index: 2;
 }
 
 
 .logo {
     position: absolute; 
-    bottom:0;
-    height: 150px;
-    width: 150px;
+    bottom: 0px;
+
 }
 
 .left{
