@@ -447,7 +447,6 @@ img {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 .address {
@@ -833,7 +832,7 @@ img {
 /********/
 
 .fish {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     border-bottom-left-radius: 20px;
     border-top: none;
 
@@ -1046,8 +1045,8 @@ footer {
         flex-direction: column;
     }
 
-    .fish .extra-outer {
-        bottom: 10px;
+    .food-item {
+        border-radius: 0px;
     }
 
 }
@@ -1062,6 +1061,10 @@ footer {
     .grid-container {
         display: flex;
         flex-direction: column;
+    }
+
+    .food-item {
+        border-radius: 0px;
     }
 
     .tenders-col, .chips .food-item-indiv-inner  {
