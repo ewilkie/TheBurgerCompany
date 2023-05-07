@@ -1071,7 +1071,7 @@ footer {
         width: 100%
     }
 
-    .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer {
+    .fries-circle-outer, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer {
         display: none;
     }
 
@@ -1081,8 +1081,35 @@ footer {
     }
 
 
-    /*
     .food-item-indiv-outer {
+        border: 1px solid black;
+        display: grid;
+        grid-template-areas:
+        "top-left top-right"
+        "bottom-row bottom-row";
+        flex-wrap: wrap;
+        grid-template-columns: auto 10%;
+        justify-content: space-between;
+    }
+     
+    .food-item-indiv-name { 
+        grid-area: top-left;
+        width: 80%;
+        border: 1px solid black;
+    }
+    
+    .food-item-indiv-price { 
+        grid-area: top-right;
+        width: 10%;
+        border: 1px solid black;
+    }
+    
+    .food-item-indiv-desc {
+        grid-area: bottom-row;
+        width: 100%
+    }
+
+        /*
         display: flex;
         flex-direction: row;
         align-items: top;
