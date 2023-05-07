@@ -260,17 +260,19 @@ img {
     z-index: 1;
 }
 
+.fries-circle-inner {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+}
+
 .fries-circle-inner-chick {
     position: absolute;
     top: -50px;
     right: -10px;
 }
 
-.fries-circle-inner {
-    position: absolute;
-    top: -10px;
-    right: -5px;
-}
+
 
 
 /*********/
@@ -929,25 +931,24 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* remove space at bottom of page */
+    /* remove space at bottom of page 
     overflow-y: clip; 
+    z-index: 10; */
 }
 
 
 .logo-outer {
-    position: relative;    
-    /* need space on outer border so that image size is responsive */
+    position: relative;  
+    /* need space on outer div so that image size is responsive */
     height: 150px;
     width: 150px;
-    border: 1px solid purple;
-    z-index: 2;
 }
 
 
 .logo {
     position: absolute; 
-    bottom: 0px;
-
+    /* need this because rotating will cause bottom of logo to be below footer */
+    bottom: calc(-150px + 100% + 50px);
 }
 
 .left{
