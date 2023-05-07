@@ -840,8 +840,8 @@ img {
 
 .fish .extra-outer {
     position: absolute;
-    right: 5px;
-    top: 10px;
+    right: 10px;
+    bottom: 50px;
 }
 
 /* main black circle */
@@ -1029,6 +1029,12 @@ footer {
         flex-direction: column;
     }
 
+    .fish .extra-outer {
+        bottom: 10px;
+    }
+
+
+
 }
 
 /* For mobile devices */
@@ -1043,17 +1049,16 @@ footer {
         flex-direction: column;
     }
 
-    .tenders-col {
-        width: 100%;
+    .tenders-col, .chips .food-item-indiv-inner  {
+        width: 100%
     }
 
-    .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer {
+    .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer {
         display: none;
     }
 
-    .chips .food-item-indiv-inner {
-        width: 100%
-    }
+
+
 
 
     /*
