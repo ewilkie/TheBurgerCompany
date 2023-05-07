@@ -1033,8 +1033,6 @@ footer {
         bottom: 10px;
     }
 
-
-
 }
 
 /* For mobile devices */
@@ -1057,8 +1055,10 @@ footer {
         display: none;
     }
 
-
-
+    /* temporary  will need more changes for mobile */
+    .fish-col {
+        grid-template-columns: auto auto 40%;
+    }
 
 
     /*
