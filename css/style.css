@@ -1095,6 +1095,7 @@ footer {
      
     .food-item-indiv-name { 
         grid-area: top-left;
+        /* over ride width set for main page */
         width: auto;
     }
     
@@ -1117,6 +1118,38 @@ footer {
     .seafood .food-item-indiv-desc {
         width: auto;
     }
+    /*
+    .atomic .food-item-indiv-outer {
+        display: grid;
+        grid-template-areas:
+        "top-left top-middle top-right"
+        "bottom-row bottom-row bottom-row";
+        flex-wrap: wrap;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+    }
+    */
+
+    .atomic .food-item-indiv-name {
+        
+        width: auto;
+        grid-area: top-right;
+    }     
+    
+    .atomic .food-item-indiv-price {
+
+        width: auto;
+        grid-area: top-right;
+        align-self: right;
+    }
+    
+    .atomic .food-item-indiv-desc {
+
+        width: 100%;
+        grid-area: bottom-row;
+    }
+
+
 
 }
 
