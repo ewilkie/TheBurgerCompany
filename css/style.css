@@ -123,7 +123,6 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    border: 1px solid black;
 }
 
 .food-item-indiv-outer {
@@ -139,7 +138,6 @@ img {
 .food-item-indiv-name { 
     width: 40%;
     /* margin-right: 1px; */
-    border: 1px solid black;
 }
 
 /*
@@ -154,13 +152,10 @@ img {
     width: 9%; 
     text-align: left;
     margin-right: 1px;
-    border: 1px solid black;
 }
 
 .food-item-indiv-desc {
     width: 49%;
-    border: 1px solid black;
-    
 }
 
 /* double Border for headers */
@@ -220,6 +215,11 @@ img {
 
 .bacon {
     border: none;
+}
+
+/* both bacon and outer class on div */
+.bacon.food-item-indiv-outer  {
+    width: 100%;
 }
 
 /*
@@ -1057,14 +1057,14 @@ footer {
     }
 
     .bacon .food-item-indiv-desc {
-        border: 1px solid white;
         width: 50%;
     }
 
+    /*
     .bacon .food-item-indiv-name {
         border: 1px solid white;
     }
-
+    */
 }
 
 /* For mobile devices */
