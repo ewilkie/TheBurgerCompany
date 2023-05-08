@@ -1072,7 +1072,7 @@ footer {
         width: 100%
     }
 
-    .fries-circle-outer, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer {
+    .fries-circle-outer, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
         display: none;
     }
 
@@ -1083,7 +1083,7 @@ footer {
 
 
     .food-item-indiv-outer {
-
+        padding: 5px;
         display: grid;
         grid-template-areas:
         "top-left top-right"
@@ -1103,7 +1103,6 @@ footer {
         grid-area: top-right;
         width: auto;
         margin-right: 1px;
-        border: 1px solid white;
     }
     
     .food-item-indiv-desc {
