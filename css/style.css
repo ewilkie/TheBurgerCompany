@@ -326,8 +326,9 @@ img {
     padding: 5px 0;
 }
 
-.chips .food-item-indiv-outer:last-child {
+.food-item-indiv-outer-chips:last-child {
     padding-bottom: 0px;
+    border-bottom: none;
 }
 
 .food-item.chips {
