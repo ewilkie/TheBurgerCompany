@@ -31,7 +31,7 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0px;
-    padding: 0;
+    padding: 0px;
 }
 
 h3 {
@@ -123,6 +123,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+    border: 1px solid black;
 }
 
 .food-item-indiv-outer {
@@ -130,33 +131,36 @@ img {
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     border-bottom: 2px solid white;
     padding-bottom: 2px;
 }
 
 .food-item-indiv-name { 
-    width: 39%;
-    margin-right: 1px;
+    width: 40%;
+    /* margin-right: 1px; */
+    border: 1px solid black;
 }
 
-
+/*
 .food-item-indiv-name h2 {
     padding: 0;
     margin: 0;
     font-size: 24px;
 }
-
+*/
 
 .food-item-indiv-price { 
-    width: 5%; 
-    text-align: right;
+    width: 9%; 
+    text-align: left;
     margin-right: 1px;
+    border: 1px solid black;
 }
 
 .food-item-indiv-desc {
-    width: 50%;
-    margin-left: auto;
+    width: 49%;
+    border: 1px solid black;
+    
 }
 
 /* double Border for headers */
@@ -218,9 +222,12 @@ img {
     border: none;
 }
 
+/*
 .bacon .food-item-indiv-name {
-    width: 30%;
+    width: 100%;
+    border: 1px solid white;
 }
+*/
 
 .burgers-beef {
     padding-bottom: 20px;
@@ -1049,6 +1056,15 @@ footer {
         border-radius: 0px;
     }
 
+    .bacon .food-item-indiv-desc {
+        border: 1px solid white;
+        width: 50%;
+    }
+
+    .bacon .food-item-indiv-name {
+        border: 1px solid white;
+    }
+
 }
 
 /* For mobile devices */
@@ -1092,23 +1108,28 @@ footer {
         grid-template-columns: auto auto;
         justify-content: space-between;
     }
-     
+
     .food-item-indiv-name { 
         grid-area: top-left;
         /* over ride width set for main page */
         width: auto;
+        border: 1px solid white;
     }
     
     .food-item-indiv-price { 
         grid-area: top-right;
         width: auto;
         margin-right: 1px;
+        border: 1px solid white;
     }
     
     .food-item-indiv-desc {
         grid-area: bottom-row;
-        width: 100%
+        width: 100%;
+        border: 1px solid white;
     }
+
+    
 
     .seafood .food-item-indiv-name {
         width: auto;
