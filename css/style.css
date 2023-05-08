@@ -1124,6 +1124,7 @@ footer {
         width: auto;
         margin-right: 1px;
         border: 1px solid white;
+        text-align: right;
     }
     
     .food-item-indiv-desc {
