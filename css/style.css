@@ -1097,6 +1097,9 @@ footer {
         grid-template-columns: auto auto 40%;
     }
 
+    .food-item-header {
+        padding: 5px 0 10px 0;
+    }
 
     .food-item-indiv-outer {
         padding: 5px;
