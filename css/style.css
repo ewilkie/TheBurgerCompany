@@ -132,7 +132,7 @@ img {
     justify-content: space-between;
     /* flex-wrap: wrap; */
     border-bottom: 2px solid white;
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
 }
 
 .food-item-indiv-name { 
@@ -156,6 +156,7 @@ img {
 
 .food-item-indiv-desc {
     width: 49%;
+    padding: 2px 0;
 }
 
 /* double Border for headers */
