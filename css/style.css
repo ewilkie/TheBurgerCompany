@@ -294,17 +294,31 @@ img {
     margin-bottom: 1px;
     border-bottom: none;
 
+    /* for placing dipping sauce */
     position: relative;
     
 }
 
+/*
 .chips h2 {
     padding: 0;
     margin: 0;
 }
+*/
+
+/* duplicate, but prevent responsive from having effect */
+.food-item-indiv-outer-chips {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
 
 .chips .food-item-indiv-inner {
-    width: 72%;
+    width: 72%; /* make sapce for dipping sauce */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1084,19 +1098,6 @@ footer {
         padding: 1px;
     }
 
-    .tenders-col, .chips .food-item-indiv-inner  {
-        width: 100%
-    }
-
-    .fries-circle-outer, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
-        display: none;
-    }
-
-    /* temporary  will need more changes for mobile */
-    .fish-col {
-        grid-template-columns: auto auto 40%;
-    }
-
     .food-item-header {
         padding: 5px 0 10px 0;
     }
@@ -1110,6 +1111,7 @@ footer {
         flex-wrap: wrap;
         grid-template-columns: auto auto;
         justify-content: space-between;
+        border: 1px solid black;
     }
 
     .food-item-indiv-name { 
@@ -1133,6 +1135,27 @@ footer {
         border: 1px solid white;
     }
 
+    /* remove all cricles and add-ons */
+    .fries-circle-outer, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
+        display: none;
+    }
+
+    .food-item-indiv-outer-chips {
+        padding: 0 5px;
+    }
+
+    .tenders-col, .chips .food-item-indiv-inner  {
+        width: 100%;
+    }
+
+    /* temporary  will need more changes for mobile */
+    .fish-col {
+        grid-template-columns: auto auto 40%;
+    }
+
+
+
+    
     
 
     .seafood .food-item-indiv-name {
