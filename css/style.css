@@ -46,7 +46,7 @@ h4 {
 
 /* description */
 h5 {
-    font-size: 0.7em;
+    font-size: 0.5em;
     padding: 0;
     margin: 0;
     font-weight: 300;
@@ -315,6 +315,12 @@ img {
     
 }
 
+
+
+.chips h3 {
+    font-size: 0.9em;
+}
+
 /* duplicate, but prevent responsive from having effect */
 .food-item-indiv-outer-chips {
     display: flex;
@@ -380,7 +386,7 @@ img {
 
 .chips .dipping-sauce-text {
     position: absolute;
-    top: 20px;
+    top: 22px;
     left: 20px;
     right: 20px;
     transform: rotate(-10deg);
@@ -388,13 +394,12 @@ img {
     color: white;
 }
 
+/* make text fit in cirlce */
 .chips .dipping-sauce-text h4 {
-    font-size: 20px;
+    font-size: 0.6em;
 }
 
-.chips .dipping-sauce-text h4 {
-    font-size: 16px;
-}
+
 
 /**********/
 /* Atomic */
@@ -526,9 +531,7 @@ img {
     padding-top: 20px;
 }
 
-.souvlaki h1 {
-    font-size: 40px;
-}
+
 
 /* header items */
 .food-item-header-souva {
@@ -609,9 +612,10 @@ img {
     align-self: start;
 }
 
+/*
 .tortilla h1 {
     font-size: 40px;
-}
+}*/
 
 .tortilla .dblBorder  {
     border-bottom-color: black;
@@ -669,14 +673,6 @@ img {
     border-bottom-left-radius: 20px;
     position: relative;
     
-}
-
-.tenders h1 {
-    font-size: 29px;
-} 
-
-.tenders h2 {
-    font-size: 25px;
 }
 
 .tenders-col {
@@ -1059,8 +1055,9 @@ footer {
 /* repsonsiveness */
 /******************/
 
-/* For large laptops and desktops 
+/* For large laptops and desktops */
 @media screen and (min-width: 1200px) {
+    /*
     main {
         width: 1200px;
 
@@ -1069,9 +1066,26 @@ footer {
     footer {
         margin: 0 auto;
         width: 1200px;
-    }      
+    } */
+    
+    /* change font sizes to make things fit on page 
+    html takes care of font size changes for smaller pages */
+
+    .souvlaki h2 {
+        font-size: 1.4em;
+    }
+    
+    .tenders h2 {
+        font-size: 1em;
+    }
+    
+    .chips h2 {
+        font-size: 1.5em;
+    }
+
+
 }
-*/
+
 
 /* For small laptops, desktops and mobile */ 
 @media screen and (min-width: 620px) and (max-width: 1199px) {
