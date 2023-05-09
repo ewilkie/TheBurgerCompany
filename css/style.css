@@ -610,11 +610,6 @@ img {
     align-self: start;
 }
 
-/*
-.tortilla h1 {
-    font-size: 40px;
-}*/
-
 .tortilla .dblBorder  {
     border-bottom-color: black;
     border-top-color: black;
@@ -770,10 +765,6 @@ img {
 /* Salads */
 /**********/
 
-.salads h1 {
-    font-size: 40px;
-}
-
 .salads-col {
     display: grid;
     grid-template-columns: repeat(3, 22%) 35%;
@@ -832,11 +823,6 @@ img {
     font-weight: 300px;
     font-size: 15px;
 }
-
-.seafood h1, .fish h1 {
-    font-size: 40px;
-}
-
 
 .seafood, .fish {
     background-color:  #00afef;
