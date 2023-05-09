@@ -19,14 +19,18 @@ seafood #00afef
 
 
 /* text sizing */
-h1 {
+/* no h1 since no title */
+
+/* food item section title */
+h2 {
     font-size: 1.75em;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0px 0 5px 0;
 }
 
-h2 {
+/* item name */
+h3 {
     font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
@@ -34,25 +38,30 @@ h2 {
     padding: 0px;
 }
 
-h3 {
+/* price */
+h4 {
     font-size: 0.65em;
     margin:0px;
 }
 
-h4 {
+/* description */
+h5 {
     font-size: 0.7em;
     padding: 0;
     margin: 0;
     font-weight: 300;
 }
 
-h5 {
+/*
+h6 {
     color: white;
     font-weight: 300;
     font-size: 85px;
     padding: 0;
     margin: 0;
 }
+*/
+
 
 p{
     font-size: 16px;
