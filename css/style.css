@@ -52,15 +52,15 @@ h5 {
     font-weight: 300;
 }
 
-/*
+
 h6 {
     color: white;
     font-weight: 300;
-    font-size: 85px;
+    font-size: 2em;
     padding: 0;
     margin: 0;
 }
-*/
+
 
 
 p{
@@ -315,13 +315,6 @@ img {
     
 }
 
-/*
-.chips h2 {
-    padding: 0;
-    margin: 0;
-}
-*/
-
 /* duplicate, but prevent responsive from having effect */
 .food-item-indiv-outer-chips {
     display: flex;
@@ -395,7 +388,7 @@ img {
     color: white;
 }
 
-.chips .dipping-sauce-text h3 {
+.chips .dipping-sauce-text h4 {
     font-size: 20px;
 }
 
@@ -915,7 +908,7 @@ img {
 
 .fish .extra-text {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 20px;
     right: 20px;
 
@@ -924,10 +917,11 @@ img {
     
 }
 
+/*
 .fish .extra-text h5 {
     font-size: 60px;
 }
-
+*/
 
 .fish-col {
     display: grid;
