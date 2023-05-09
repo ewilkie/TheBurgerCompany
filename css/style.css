@@ -71,6 +71,10 @@ b {
 /**********************/
 
 
+html { font-size: calc(1em + 1vw) }
+
+
+
 body {
     background-color: #c6401b;
     font-family: 'Oswald', 'KBWritersBlock.ttf';
