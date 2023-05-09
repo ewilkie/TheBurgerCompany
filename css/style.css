@@ -317,9 +317,7 @@ img {
 
 
 
-.chips h3 {
-    font-size: 0.9em;
-}
+
 
 /* duplicate, but prevent responsive from having effect */
 .food-item-indiv-outer-chips {
@@ -1083,6 +1081,9 @@ footer {
         font-size: 1.5em;
     }
 
+    .chips h3, .atomic h3 {
+        font-size: 0.8em;
+    }
 
 }
 
