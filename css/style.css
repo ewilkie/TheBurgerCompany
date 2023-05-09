@@ -35,12 +35,12 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 0.65em;
     margin:0px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 0.7em;
     padding: 0;
     margin: 0;
     font-weight: 300;
@@ -157,7 +157,7 @@ img {
 .food-item-indiv-price { 
     width: 9%; 
     text-align: left;
-    margin-right: 5px;
+    padding: 3px 5px 0 0;
 }
 
 .food-item-indiv-desc {
@@ -939,9 +939,12 @@ img {
     margin-left: 10px;
 }
 
+
+
 .fish-col h4 {
     text-transform: uppercase;
-    font-size: 18px;
+    font-weight: 300;
+    /* font-size: 18px; */
     margin: 0;
     padding: 2px 0px;
 }
@@ -1053,7 +1056,7 @@ footer {
 /* repsonsiveness */
 /******************/
 
-/* For large laptops and desktops */
+/* For large laptops and desktops 
 @media screen and (min-width: 1200px) {
     main {
         width: 1200px;
@@ -1065,6 +1068,7 @@ footer {
         width: 1200px;
     }      
 }
+*/
 
 /* For small laptops, desktops and mobile */ 
 @media screen and (min-width: 620px) and (max-width: 1199px) {
