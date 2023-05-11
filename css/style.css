@@ -228,7 +228,64 @@ img {
     margin: 10px 0 0 0;
 }
 
-/* epic burger */
+.epic-burger-outer {
+    display: grid;
+    grid-template-columns: 47.5% 9% 45%;
+    grid-template-rows: auto auto;
+    /*
+    grid-template-areas:
+    "top-left top-middle top-right"
+    "bottom-row-left bottom-row-middle bottom-row-right";
+    justify-content: space-between; */
+}
+
+.epic-name {
+    grid-area: 1 / 1 / 2 / 2; /* start at row 1, column 1 and end at row 2, column 2 */
+    border: 1px solid white;
+  }
+  
+.epic-price {
+    grid-area: 1 / 2 / 2 / 3; /* start at row 1, column 2 and end at row 2, column 3 */
+  }
+  
+.epic-desc {
+    grid-area: 1 / 3 / 3 / 4; /* start at row 1, column 3 and end at row 3, column 4 */
+  }
+  
+.epic-burger {
+    grid-area: 2 / 1 / 3 / 4; /* start at row 2, column 3 and end at row 3, column 4 */
+}
+
+
+/* epic burger 
+.tenders-col {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    width: 75%;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    padding-bottom:5px;
+}
+
+.food-item-indiv-outer-tender {
+    display: grid;
+    grid-template-areas:
+    "top-left top-right"
+    "bottom-row bottom-row";
+    grid-template-columns: auto 25%; 
+    justify-content: space-between;
+}
+
+.food-item-indiv-outer {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+
 .epic-burger-outer {
     display: flex;
     flex-direction: column;
@@ -239,6 +296,7 @@ img {
 .epic-burger-outer .food-item-indiv-name {
     width: 100%;
 }
+*/
 
 .epic-burger {
     border: 2px dotted white;
