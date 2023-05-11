@@ -511,27 +511,26 @@ img {
 
 .souva-extra {
     border: 1px solid cyan;
-
     /* to position within header */
     position: absolute;
     top: -0.5rem;
-    right: 1rem;
+    right: 0;
 
     /* to position gf and double */
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    width: 19vw; /* spacing between items */
+
 }
 
 .souvlaki .gluten-free {
-    width: 2.5rem; /* can't use vw or vh because changes dim */
+    width: 2.5rem; /* can't use vw or vh bc need cirlce */
     height: 2.5rem;
     border-radius: 50%;
     background-color: white;
     text-align: center;
-    
-    top: -0.5rem;
-    right: 6rem;
 }
 
 .souvlaki .gluten-free-text {
@@ -554,34 +553,50 @@ img {
     color: black;
     font-size: 2em;
     transform: rotate(15deg);
+    
     position: absolute;
     top: 1.1rem;
     left: 0.4rem;
 }
 
 .double-souva {
-    width: 10vw;
-    height: 30px;
+    width: 4rem;
+    height: 1.3rem;
     background-color: #CB7817;
+    text-align: center;
+
     border-radius: 20px;
-    padding: 5px 5px 8px 5px;
+    padding: 0.3rem;
+
+    /* to position star */
+    position: relative;
+    /*
+    padding: 5px 5px 5px 5px;
     position: absolute;
     top: 4px;
     right: 0;
+    */
 }
 
 .double-souva-text {
     font-size: 0.55em;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .star-souva {
     color: white;
+    transform: rotate(-30deg);
+
     position: absolute;
+    top: -0.5rem;
+    left: -0.4rem;
+
+    /*
+    
     top: -10px;
     left: -15px;
-    transform: rotate(-30deg);
-    font-size: 25px;
+    
+    font-size: 25px; */
 }
 
 
