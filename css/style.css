@@ -87,18 +87,12 @@ html {
 
 
 body {
-    background-color: #c6401b;
     font-family: 'Oswald', 'KBWritersBlock.ttf';
     margin: 0;
     padding: 0;
 }
 
-main {
-    /* width: 1200px; for responisveness 
-    overflow-y: clip; */
-    margin: 0 auto;
-    
-}
+/* no main since full width */
 
 .grid-container {
     display: grid;
@@ -145,23 +139,12 @@ img {
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     border-bottom: 2px solid white;
-    /* padding-bottom: 2px; */
 }
 
 .food-item-indiv-name { 
     width: 49%;
-    /* margin-right: 1px; */
 }
-
-/*
-.food-item-indiv-name h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-}
-*/
 
 .food-item-indiv-price { 
     width: 9%; 
@@ -195,9 +178,9 @@ img {
 .bottom-border {
     border-top: none;
     width: 100%;
-    /* margin: 20px 0 0px 0; */
 }
 
+/* remove border for last item */
 .burgers-beef .food-item-indiv-outer:last-child,
 .burgers-chicken .food-item-indiv-outer:nth-last-child(2),
 .souvlaki .food-item-indiv-outer:last-child,
@@ -238,13 +221,6 @@ img {
     width: 100%;
 }
 
-/*
-.bacon .food-item-indiv-name {
-    width: 100%;
-    border: 1px solid white;
-}
-*/
-
 .burgers-beef {
     padding-bottom: 20px;
 }
@@ -261,11 +237,9 @@ img {
     width: 40%;
 }
 
-
 .epic-burger-outer .food-item-indiv-name {
     width: 100%;
 }
-
 
 .epic-burger {
     border: 2px dotted white;
@@ -296,8 +270,6 @@ img {
 }
 
 
-
-
 /*********/
 /* Chips */
 /*********/
@@ -316,16 +288,12 @@ img {
 }
 
 
-
-
-
 /* duplicate, but prevent responsive from having effect */
 .food-item-indiv-outer-chips {
     display: flex;
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     border-bottom: 2px solid white;
     padding-bottom: 2px;
 }
@@ -396,7 +364,6 @@ img {
 .chips .dipping-sauce-text h4 {
     font-size: 0.6em;
 }
-
 
 
 /**********/
@@ -529,8 +496,6 @@ img {
     padding-top: 20px;
 }
 
-
-
 /* header items */
 .food-item-header-souva {
     position: relative;
@@ -538,7 +503,6 @@ img {
 }
 
 .souvlaki .gluten-free {
-    /* margin-top: 20px; */
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -626,7 +590,6 @@ img {
 
 
 .tortilla .gluten-free {
-    /* margin-top: 20px; */
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -665,7 +628,6 @@ img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
-    
 }
 
 .tenders-col {
@@ -842,10 +804,8 @@ img {
 /********/
 
 .fish {
-    /*margin: 0 0 5px 0; */
     border-bottom-left-radius: 20px;
     border-top: none;
-
     position: relative;
 }
 
@@ -897,12 +857,6 @@ img {
     
 }
 
-/*
-.fish .extra-text h5 {
-    font-size: 60px;
-}
-*/
-
 .fish-col {
     display: grid;
     grid-template-columns: 20% 19% auto ;
@@ -923,11 +877,9 @@ img {
 }
 
 
-
 .fish-col h4 {
     text-transform: uppercase;
     font-weight: 300;
-    /* font-size: 18px; */
     margin: 0;
     padding: 2px 0px;
 }
@@ -1041,16 +993,6 @@ footer {
 
 /* For large laptops and desktops */
 @media screen and (min-width: 1200px) {
-    /*
-    main {
-        width: 1200px;
-
-    }
-
-    footer {
-        margin: 0 auto;
-        width: 1200px;
-    } */
     
     /* change font sizes to make things fit on page 
     html takes care of font size changes for smaller pages */
@@ -1093,7 +1035,6 @@ footer {
         width: 50%;
     }
 
-    
     .bacon .food-item-indiv-name {
         width: 30%;
     }
@@ -1130,28 +1071,25 @@ footer {
         flex-wrap: wrap;
         grid-template-columns: auto auto;
         justify-content: space-between;
-        /*border: 1px solid black;*/
     }
 
     .food-item-indiv-name { 
         grid-area: top-left;
-        /* over ride width set for main page */
+        /* over ride width set for bigger page */
         width: auto;
-        /*border: 1px solid white; */
     }
     
     .food-item-indiv-price { 
         grid-area: top-right;
         width: auto;
         margin-right: 1px;
-        /*border: 1px solid white;*/
         text-align: right;
+        
     }
     
     .food-item-indiv-desc {
         grid-area: bottom-row;
         width: 100%;
-        /*border: 1px solid white;*/
     }
 
     /* remove all cricles and add-ons */
@@ -1171,11 +1109,6 @@ footer {
     .fish-col {
         grid-template-columns: auto auto 40%;
     }
-
-
-
-    
-    
 
     .seafood .food-item-indiv-name {
         width: auto;
@@ -1197,7 +1130,6 @@ footer {
     */
 
     .atomic .food-item-indiv-name {
-        
         width: auto;
         grid-area: top-right;
     }     
