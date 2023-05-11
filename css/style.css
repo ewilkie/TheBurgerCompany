@@ -510,7 +510,6 @@ img {
 }
 
 .souva-extra {
-    border: 1px solid cyan;
     /* to position within header */
     position: absolute;
     top: -0.5rem;
@@ -537,7 +536,6 @@ img {
     color: black;
     width: 2.4rem;
     transform: rotate(15deg);
-    /*padding: 15px 0 0 5px; */
     padding: 0.4rem 0 0 0.1rem;
     font-size: 0.45em;
 }
@@ -560,27 +558,19 @@ img {
 }
 
 .double-souva {
+    background-color: #CB7817;
     width: 4rem;
     height: 1.3rem;
-    background-color: #CB7817;
-    text-align: center;
-
     border-radius: 20px;
     padding: 0.3rem;
+    text-align: center;
 
     /* to position star */
     position: relative;
-    /*
-    padding: 5px 5px 5px 5px;
-    position: absolute;
-    top: 4px;
-    right: 0;
-    */
 }
 
 .double-souva-text {
     font-size: 0.55em;
-    /*text-align: center;*/
 }
 
 .star-souva {
@@ -590,13 +580,6 @@ img {
     position: absolute;
     top: -0.5rem;
     left: -0.4rem;
-
-    /*
-    
-    top: -10px;
-    left: -15px;
-    
-    font-size: 25px; */
 }
 
 
