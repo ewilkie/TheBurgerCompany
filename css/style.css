@@ -607,25 +607,6 @@ img {
     position: relative;
 }
 
-
-/*
-.souvlaki .gluten-free {
-    width: 2.5rem;  can't use vw or vh bc need cirlce 
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-}
-
-.souvlaki .gluten-free-text {
-    color: black;
-    width: 2.4rem;
-    transform: rotate(15deg);
-    padding: 0.4rem 0 0 0.1rem;
-    font-size: 0.45em;
-}
-*/
-
 .tortilla .gluten-free {
     width: 2.5rem;
     height: 2.5rem;
@@ -639,9 +620,7 @@ img {
 }
 
 .tortilla .gluten-free-text {
-
     color: white;
-    /*width: 2.4rem; */
     transform: rotate(15deg);
     padding: 0.5rem 0 0 0.1rem;
     font-size: 0.45em;
