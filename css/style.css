@@ -184,7 +184,7 @@ img {
 .tortilla .food-item-indiv-outer:last-child,
 .tenders .food-item-indiv-outer,
 .chips .food-item-indiv-outer:last-child,
-.atomic .food-item-indiv-outer:last-child,
+/*.atomic .food-item-indiv-outer:last-child, */
 .seafood .food-item-indiv-outer:last-child,
 .fish .food-item-indiv-outer{
     border-bottom: none;
@@ -384,17 +384,17 @@ img {
     margin: 0;
 }
 
+/*
 .atomic.food-item {
-    padding-left: 0px;
+    padding-left: 10px;
 }
+*/
 
 .atomic-outer {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: 45% 55%;
     align-items: center;
-    border: 1px solid cyan;
+    border-bottom: 1px solid white;
 }
 
 .atomic-align1 {
@@ -402,18 +402,15 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid pink;
-    width: 80%;
 }
 
 .atomic-image {
-    width: 3rem;
+    width: 2rem;
 }
 
 .atomic-name {
-    width: 80%;
+    width: 50%;
     padding: 0px;
-    border: 1px solid white;
 }     
 
 .atomic-price {
@@ -421,10 +418,11 @@ img {
     margin-right: auto;
 }
 
+/*
 .atomic-align2 {
     border: 1px solid yellow;
 }
-
+*/
 /*
 .food-item-indiv-desc {
     width: 53%;
@@ -1222,11 +1220,11 @@ footer {
         align-items: flex-start;
         border: 1px solid cyan;
     }
-
+    /*
     .atomic-align1 {
         width: 100%;
     }
-    /*
+
     .food-item-indiv-outer-atomic {
         display: grid;
         grid-template-areas:
