@@ -388,7 +388,7 @@ img {
     padding-left: 0px;
 }
 
-.food-item-indiv-outer-atomic {
+.atomic-outer {
 
     display: flex;
     flex-direction: row;
@@ -402,34 +402,36 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px dotted yellow;
+    border: 1px solid pink;
     width: 80%;
-}
-
-.atomic-align2 {
-    border: 1px solid yellow;
 }
 
 .atomic-image {
     width: 3rem;
 }
 
-.food-item-indiv-name-atomic {
+.atomic-name {
     width: 80%;
     padding: 0px;
     border: 1px solid white;
 }     
 
-.food-item-indiv-price-atomic {
+.atomic-price {
     width: 20%;
     margin-right: auto;
 }
 
-.food-item-indiv-desc-atomic {
+.atomic-align2 {
+    border: 1px solid yellow;
+}
+
+/*
+.food-item-indiv-desc {
     width: 53%;
     align-self:right;
     border: 1px solid red;
 }
+*/
 
 /**********/
 /* Corona */
