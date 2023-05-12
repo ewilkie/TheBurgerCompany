@@ -1068,10 +1068,27 @@ footer {
     }
 
     .chips .dipping-sauce {
-        width: 7rem;
-        height: 7rem;
+        width: 6.5rem;
+        height: 6.5rem;
     }
 
+    .chips .dipping-sauce-text {
+        position: absolute;
+        top: 1.4rem;
+        left: 1rem;
+        right: 1rem;
+        transform: rotate(-10deg);
+        text-align: center;
+        color: white;
+    }
+
+    .chips .dipping-sauce-text h4 {
+        font-size: 0.8em;
+    }
+
+    .chips .dipping-sauce-text h5 {
+        font-size: 0.6em;
+    }
 }
 
 /* For mobile devices */
