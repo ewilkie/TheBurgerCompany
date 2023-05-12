@@ -388,30 +388,47 @@ img {
     padding-left: 0px;
 }
 
-.atomic .food-item-indiv-outer {
-    align-items: center;
+.food-item-indiv-outer-atomic {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    border: 1px solid cyan;
 }
 
-
-.atomic .atomic-image {
-    width: 40px;
+.atomic-align1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px dotted yellow;
+    width: 80%;
 }
 
-.atomic .food-item-indiv-name {
-    width: 25%;
+.atomic-align2 {
+    border: 1px solid yellow;
+}
+
+.atomic-image {
+    width: 3rem;
+}
+
+.food-item-indiv-name-atomic {
+    width: 80%;
     padding: 0px;
+    border: 1px solid white;
 }     
 
-.atomic .food-item-indiv-price {
-    width: 12%;
+.food-item-indiv-price-atomic {
+    width: 20%;
     margin-right: auto;
 }
 
-.atomic .food-item-indiv-desc {
+.food-item-indiv-desc-atomic {
     width: 53%;
+    align-self:right;
+    border: 1px solid red;
 }
 
 /**********/
@@ -1195,8 +1212,20 @@ footer {
     .seafood .food-item-indiv-desc {
         width: auto;
     }
+
+    .food-item-indiv-outer-atomic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid cyan;
+    }
+
+    .atomic-align1 {
+        width: 100%;
+    }
     /*
-    .atomic .food-item-indiv-outer {
+    .food-item-indiv-outer-atomic {
         display: grid;
         grid-template-areas:
         "top-left top-middle top-right"
@@ -1204,28 +1233,33 @@ footer {
         flex-wrap: wrap;
         grid-template-columns: auto auto auto;
         justify-content: space-between;
+        border: 1px solid cyan;
     }
-    */
+       
+    .atomic-image {
+        grid-area: top-left;
+        bordeR: 1px solid pink;
+    }
 
-    .atomic .food-item-indiv-name {
+    .food-item-indiv-name-atomic {
         width: auto;
-        grid-area: top-right;
+        grid-area:top-middle;
+        align-self: left;
     }     
-    
-    .atomic .food-item-indiv-price {
-
-        width: auto;
+     
+    .food-item-indiv-price-atomic {
+        margin-right: 0.2rem;
+        text-align: right;
         grid-area: top-right;
         align-self: right;
+        border: 1px solid red;
+        width: 50%
     }
-    
-    .atomic .food-item-indiv-desc {
 
+    .food-item-indiv-desc-atomic {
         width: 100%;
         grid-area: bottom-row;
     }
-
-
-
+    */
 }
 
