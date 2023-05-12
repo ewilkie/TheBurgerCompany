@@ -404,14 +404,23 @@ img {
     align-items: center;
 }
 
+.atomic-image-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+}
+
 .atomic-image {
     width: 2rem;
 }
 
+/*
 .atomic-name {
     width: 50%;
     padding: 0px;
-}     
+} 
+*/    
 
 .atomic-price {
     width: 20%;
@@ -1220,10 +1229,43 @@ footer {
         align-items: flex-start;
         border: 1px solid cyan;
     }
+
+    .atomic-outer {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        border-bottom: 1px solid white;
+    }
+  
     /*
     .atomic-align1 {
-        width: 100%;
+        border: 1px solid cyan;
+        
     }
+
+    /*
+    .atomic-image {
+        width: 2rem;
+    }
+    */
+
+    .atomic-name {
+        width: auto;
+        padding: 0px;
+        margin-left: 1px;
+    }     
+
+    .atomic-price {
+        width:auto;
+        align-self: right;
+        margin-right: 1px;
+    }
+        /*
+    .atomic-align2 {
+        border: 1px solid white;
+    }
+
 
     .food-item-indiv-outer-atomic {
         display: grid;
