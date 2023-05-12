@@ -397,6 +397,10 @@ img {
     border-bottom: 1px solid white;
 }
 
+.atomic-outer:last-child {
+    border-bottom: none;
+}
+
 .atomic-align1 {
     display: flex;
     flex-direction: row;
@@ -1238,6 +1242,7 @@ footer {
         border-bottom: 1px solid white;
     }
   
+    
     /*
     .atomic-align1 {
         border: 1px solid cyan;
