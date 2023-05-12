@@ -1058,6 +1058,11 @@ footer {
         width: 30%;
     }
     
+    .souva-extra {
+        width: 30vw;
+        right: 1rem;
+    }
+
 }
 
 /* For mobile devices */
