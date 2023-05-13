@@ -241,10 +241,12 @@ img {
   
 .epic-price {
     grid-area: 1 / 2 / 2 / 3; 
+    padding-top: 4px;
 }
   
 .epic-desc {
     grid-area: 1 / 3 / 3 / 4; 
+    padding-top: 4px;
 }
   
 .epic-burger {
@@ -1197,12 +1199,14 @@ footer {
     /* start at row/column and end at row/column */
     .epic-name {
         grid-area: 1 / 1 / 1 / 3; 
+        padding-top: 8px;
+        padding-bottom: 4px;
     }
     
     .epic-price {
         grid-area: 1 / 4 / 1 / 4; 
         align-self: right;
-        padding: 0px 2px 0 0;
+        padding: 8px 2px 0 0;
     }
     
     .epic-desc {
