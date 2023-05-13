@@ -1244,18 +1244,10 @@ footer {
     }  
     
     .atomic-align1 {
-
         margin:0px;
     }
 
-    /*
-    .atomic-image {
-        width: 2rem;
-    }
-    */
-
     .atomic-image-name {
-
         margin:0px;
     }
 
@@ -1263,7 +1255,6 @@ footer {
         width: auto;
         padding: 0px;
         margin-left: 1px;
-
     }     
 
     .atomic-price {
@@ -1277,42 +1268,5 @@ footer {
         margin-bottom: 5px;
     }
 
-    /*
-    .food-item-indiv-outer-atomic {
-        display: grid;
-        grid-template-areas:
-        "top-left top-middle top-right"
-        "bottom-row bottom-row bottom-row";
-        flex-wrap: wrap;
-        grid-template-columns: auto auto auto;
-        justify-content: space-between;
-        border: 1px solid cyan;
-    }
-       
-    .atomic-image {
-        grid-area: top-left;
-        bordeR: 1px solid pink;
-    }
-
-    .food-item-indiv-name-atomic {
-        width: auto;
-        grid-area:top-middle;
-        align-self: left;
-    }     
-     
-    .food-item-indiv-price-atomic {
-        margin-right: 0.2rem;
-        text-align: right;
-        grid-area: top-right;
-        align-self: right;
-        border: 1px solid red;
-        width: 50%
-    }
-
-    .food-item-indiv-desc-atomic {
-        width: 100%;
-        grid-area: bottom-row;
-    }
-    */
 }
 
