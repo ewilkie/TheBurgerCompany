@@ -63,7 +63,7 @@ h6 {
 p{
     font-size: 0.55em;
     padding:0;
-    margin: 0;
+    margin:0;
 }
 
 b {
@@ -1237,16 +1237,15 @@ footer {
     .atomic-outer {
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
         align-items: center;
         border-bottom: 1px solid white;
-    }
-  
+        grid-row-gap: 1px;
+    }  
     
-    /*
     .atomic-align1 {
-        border: 1px solid cyan;
-        
+
+        margin:0px;
     }
 
     /*
@@ -1255,23 +1254,30 @@ footer {
     }
     */
 
+    .atomic-image-name {
+
+        margin:0px;
+    }
+
     .atomic-name {
         width: auto;
         padding: 0px;
         margin-left: 1px;
+
     }     
 
     .atomic-price {
         width:auto;
         align-self: right;
-        margin-right: 1px;
+        margin-right: 7px;
     }
-        /*
+        
     .atomic-align2 {
-        border: 1px solid white;
+        margin-left: 10px;
+        margin-bottom: 5px;
     }
 
-
+    /*
     .food-item-indiv-outer-atomic {
         display: grid;
         grid-template-areas:
