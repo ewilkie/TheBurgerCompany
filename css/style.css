@@ -1129,6 +1129,10 @@ footer {
     .chips .dipping-sauce-text h5 {
         font-size: 0.6em;
     }
+
+    .corona h3 {
+        font-size: 1.5em;
+    }
 }
 
 /* For mobile devices */
@@ -1278,6 +1282,10 @@ footer {
     .atomic-align2 {
         margin-left: 10px;
         margin-bottom: 5px;
+    }
+
+    .corona h3 {
+        font-size: 0.8em;
     }
 
 }
