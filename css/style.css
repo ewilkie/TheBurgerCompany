@@ -1008,11 +1008,13 @@ footer {
     width: 75%;
     display: flex;
     flex-direction: row;
+    border: 1px solid white;
 }
 
 .footer-scan {
-    width: 60px;
-    height: 100px;
+    /*width: 0.6em;
+    height: 3em; */
+    width: 1.5em;
     text-align: center;
     display: flex;
     align-items: center;
@@ -1020,7 +1022,7 @@ footer {
     
 }
 
-.footer-scan h2 {
+.footer-scan h3 {
     color: white;
     text-transform: none;
 }
