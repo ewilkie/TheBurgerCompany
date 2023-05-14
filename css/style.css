@@ -1293,8 +1293,25 @@ footer {
         width: 7rem;
     }
 
-    .footer-tlf h2 {
-        font-size: 1em;
+    /* footer responsive */
+    .footer-scan {
+        display:none;
+    }
+
+    .footer-qrimage {
+        display: none;
+    }
+
+    .footer-tlf {
+        display: none;
+    }
+
+    .footer-inner {
+        justify-content: center;
+    }
+
+    .footer-website {
+        padding-right: 0;
     }
 }
 
