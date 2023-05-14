@@ -960,8 +960,8 @@ img {
 footer {
     display: flex;
     flex-direction: column;
-    /* remove space at bottom of page caused by rotation of logo 
-    overflow:clip;*/
+    /* remove space at bottom of page caused by rotation of logo */
+    overflow:clip;
 }
 
 .footer-top {
@@ -1008,21 +1008,15 @@ footer {
     width: 75%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid white;
 }
 
 .footer-scan {
-    /*width: 0.6em;
-    height: 3em; 
-        ;
-
-    display: flex;
-    align-items: center;*/
     width: 1.5em;
     text-align: center;
-    border: 1px solid cyan;
-    
+    border: 1px solid cyan;      
 }
 
 .footer-scan h3 {
@@ -1151,6 +1145,10 @@ footer {
 
     .corona h3 {
         font-size: 1.5em;
+    }
+
+    .footer-tlf h2 {
+        font-size: 1em;
     }
 }
 
@@ -1311,5 +1309,8 @@ footer {
         width: 7rem;
     }
 
+    .footer-tlf h2 {
+        font-size: 1em;
+    }
 }
 
