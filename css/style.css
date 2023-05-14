@@ -965,13 +965,13 @@ footer {
 }
 
 .footer-top {
-    height: 50px;
+    height: 1.5rem;
     background-color: white;
 }
 
 .footer-bottom {
     background-color: black;
-    height: 100px;
+    height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -981,15 +981,15 @@ footer {
 .logo-outer {
     position: relative;  
     /* need space on outer div so that image size is responsive */
-    height: 150px;
-    width: 150px;
+    height: 4.5rem;
+    width: 4.5rem;
 }
 
 
 .logo {
     position: absolute; 
     /* need this because rotating will cause bottom of logo to be below footer */
-    bottom: calc(-150px + 100% + 50px);
+    bottom: calc(-4.5rem + 100% + 1.5rem);
 
 }
 
@@ -1010,8 +1010,8 @@ footer {
 }
 
 .footer-scan {
-    width: 60px;
-    height: 100px;
+    width: 0.6rem;
+    height: 1rem;
     text-align: center;
     display: flex;
     align-items: center;
