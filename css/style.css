@@ -475,8 +475,13 @@ img {
 */
 
 .corona h2 {  
-    font-size: 33px;
-    margin: 5px 10px 0 0;
+    /* override default margin and weight */
+    margin: 0.25rem 0.5rem 0 0; 
+    font-weight: 500;
+}
+
+.corona h3 {
+    padding-left:0.5rem;   
 }
 
 
