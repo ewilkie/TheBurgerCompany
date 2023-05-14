@@ -1008,16 +1008,19 @@ footer {
     width: 75%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     border: 1px solid white;
 }
 
 .footer-scan {
     /*width: 0.6em;
-    height: 3em; */
+    height: 3em; 
+        ;
+
+    display: flex;
+    align-items: center;*/
     width: 1.5em;
     text-align: center;
-    display: flex;
-    align-items: center;
     border: 1px solid cyan;
     
 }
@@ -1039,6 +1042,12 @@ footer {
 
 .footer-tlf {
     text-align: center;  
+    border: 1px solid cyan;
+}
+
+.footer-tlf h2 {
+
+    border: 1px solid salmon;
 }
 
 .footer-website {
