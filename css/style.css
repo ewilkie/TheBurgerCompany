@@ -511,13 +511,14 @@ img {
 }
 
 .opening-hrs {
-    height: 110px;
-    margin-top: 10px;
-    margin-left: 70px;
+    height: 5rem;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
+    border: 1px solid cyan;
 }
 
 .opening-hrs h3 {
@@ -527,7 +528,7 @@ img {
 .opening-hrs h4 {
     text-transform: uppercase;
     font-weight: 300;
-    margin-left: 80px;
+    margin-left: 3rem;
 }
 
 .opening-hrs b {
