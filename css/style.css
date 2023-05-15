@@ -1144,6 +1144,10 @@ footer {
     .opening-hrs h4 {
         margin-left: 0;
     }
+
+    .address h3 {
+        font-size: 0.9em;
+    }
 }
 
 /* For mobile devices */
@@ -1331,6 +1335,10 @@ footer {
 
     .opening-hrs h4 {
         margin-left: 0;
+    }
+
+    .address h3 {
+        font-size: 0.8em;
     }
 }
 
