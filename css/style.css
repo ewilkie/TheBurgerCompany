@@ -513,7 +513,7 @@ img {
 
 .opening-hrs {
     height: 5rem;
-    margin-top: 0.8rem;
+    margin-top: 0.4rem;
     margin-left: 3rem;
     display: flex;
     flex-direction: column;
@@ -962,13 +962,12 @@ footer {
     display: flex;
     flex-direction: column;
     /* remove space at bottom of page caused by rotation of logo */
-    overflow:clip;
+    overflow: clip;
 }
 
 .footer-top {
     height: 1.5rem;
     background-color: white;
-    border: 1px solid black;
 }
 
 .footer-bottom {
@@ -1135,6 +1134,15 @@ footer {
 
     .footer-tlf h2 {
         font-size: 1em;
+    }
+
+    .opening-hrs {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .opening-hrs h4 {
+        margin-left: 0;
     }
 }
 
@@ -1314,6 +1322,15 @@ footer {
 
     .footer-website {
         padding-right: 0;
+    }
+
+    .opening-hrs {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .opening-hrs h4 {
+        margin-left: 0;
     }
 }
 
