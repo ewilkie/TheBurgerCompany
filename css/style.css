@@ -893,8 +893,8 @@ img {
 
 /* main black circle */
 .fish .extra {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: black;
     border-radius: 50%;
     position: relative;  
@@ -920,7 +920,7 @@ img {
 
 .fish .extra-text {
     position: absolute;
-    top: 0.8rem;
+    top: 0.4rem;
     left: 1rem;
     right: 1rem;
 
