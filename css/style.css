@@ -259,17 +259,17 @@ img {
 }
 
 /* circle with image of fries and price */
-.fries-circle-outer {
-    height: 145px;
-    width: 145px;
+.fries-circle-outer-beef {
+    height: 5.5rem;
+    width: 5.5rem;
     position: relative;
     z-index: 1;
 }
 
-.fries-circle-inner {
+.fries-circle-inner-beef {
     position: absolute;
-    top: -10px;
-    right: -5px;
+    top: -0.2rem;
+    right: -0.1rem;
 }
 
 .fries-circle-inner-chick {
@@ -1202,7 +1202,7 @@ footer {
     }
 
     /* remove all cricles and add-ons */
-    .fries-circle-outer, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
+    .fries-circle-outer-beef, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
         display: none;
     }
 
