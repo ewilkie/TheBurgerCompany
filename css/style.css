@@ -124,12 +124,29 @@ img {
     margin-bottom: 3px;
 }
 
-.food-item-header {
+.food-item-header-beef {
     height: 2.5rem;
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 0.5rem;
 }
+
+/* circle with image of fries and price */
+.fries-circle-outer-beef {
+    height: 5.5rem;
+    width: 5.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.fries-circle-inner-beef {
+    position: absolute;
+    top: 0.15rem;
+    right: -0.1rem;
+}
+
+
+
 
 .food-item-indiv-outer {
     display: flex;
@@ -258,33 +275,21 @@ img {
     text-align: center;
 }
 
-/* circle with image of fries and price */
-.fries-circle-outer-beef {
-    height: 5.5rem;
-    width: 5.5rem;
-    position: relative;
-    z-index: 1;
-}
-
-.fries-circle-inner-beef {
-    position: absolute;
-    top: -0.2rem;
-    right: -0.1rem;
-}
 
 
 .fries-circle-outer-chick {
-    height: 5.5rem;
-    width: 5.5rem;
+    height: 3rem;
+    width: 3rem;
     position: relative;
     z-index: 1;
+    border:1px solid white;
 }
 
 
 .fries-circle-inner-chick {
     position: absolute;
-    top: -50px;
-    right: -10px;
+    bottom: 1rem;
+    right: -0.1rem;
 }
 
 
