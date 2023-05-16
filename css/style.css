@@ -120,7 +120,7 @@ img {
 }
 
 .food-item {  
-    padding: 0 10px 5px 10px;
+    padding: 0.25rem;
     margin-bottom: 3px;
 }
 
@@ -297,7 +297,6 @@ img {
     background-color: #9e0b10;
     color: white;
     border-top-right-radius: 20px;
-    padding-top: 5px;
     margin-bottom: 1px;
     border-bottom: none;
 
@@ -553,7 +552,7 @@ img {
     background-color: #670000;
     color: white;
     border-bottom-left-radius: 20px;
-    padding-top: 20px;
+    padding-top: 0.75rem;
 }
 
 /* header items */
@@ -639,12 +638,6 @@ img {
 /************/
 /* Tortilla */
 /************/
-
-.tortilla {
-    padding-top: 0px;
-    
-    align-self: start;
-}
 
 .tortilla .dblBorder  {
     border-bottom-color: black;
@@ -739,10 +732,11 @@ img {
     grid-area: bottom-row;
 }
 
+/*
 .tenders .dblBorder {
     border-top: none;
 }
-
+*/
 
 /* for positioning cicle inside chips div */
 .tenders .dipping-sauce-outer {
@@ -831,7 +825,7 @@ img {
 
 .salads .dblBorder  {
     border-bottom-color: black;
-    border-top: none;
+    border-top-color: black;
 }
 
 .salads .dblBorder:after {
