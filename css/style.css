@@ -877,7 +877,6 @@ img {
 
 .fish {
     border-bottom-left-radius: 20px;
-    border-top: none;
     position: relative;
 }
 
@@ -885,13 +884,13 @@ img {
     padding-bottom: 20px;
 }
 
+/* black $2 circle */
 .fish .extra-outer {
     position: absolute;
     right: 0.3rem;
-    bottom: 0.8rem;
+    bottom: 1rem;
 }
 
-/* main black circle */
 .fish .extra {
     width: 4rem;
     height: 4rem;
@@ -933,6 +932,7 @@ img {
     display: grid;
     grid-template-columns: 20% 19% auto ;
     grid-column-gap: 5px;
+    bordeR:1px solid white;
 }
 
 .fish-col-left, .fish-col-middle {
@@ -1253,7 +1253,8 @@ footer {
 
     /* temporary  will need more changes for mobile */
     .fish-col {
-        grid-template-columns: auto auto 40%;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
     }
 
     .seafood .food-item-indiv-name {
@@ -1264,6 +1265,7 @@ footer {
         width: auto;
     }
 
+    /* atomic */
     .food-item-indiv-outer-atomic {
         display: flex;
         flex-direction: column;
