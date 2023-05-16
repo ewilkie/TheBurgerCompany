@@ -275,21 +275,19 @@ img {
     text-align: center;
 }
 
-
-
-.fries-circle-outer-chick {
-    height: 3rem;
-    width: 3rem;
+/* header for fries circle above chicken burger title */
+.food-item-header-chick {
+    height: 1.5rem;
     position: relative;
-    z-index: 1;
-    border:1px solid white;
 }
 
-
-.fries-circle-inner-chick {
+.fries-circle-outer-chick {
+    height: 5rem;
+    width: 5rem;
     position: absolute;
-    bottom: 1rem;
     right: -0.1rem;
+    top: -1rem;
+    z-index:1;
 }
 
 
@@ -1216,7 +1214,7 @@ footer {
     }
 
     /* remove all cricles and add-ons */
-    .fries-circle-outer-beef, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
+    .fries-circle-outer-beef, .food-item-header-chick, .gluten-free, .double-souva, .tenders .dipping-sauce-outer, .chips .dipping-sauce-outer, .fish .extra-outer, .grilled {
         display: none;
     }
 
