@@ -125,7 +125,7 @@ img {
 }
 
 .food-item-header-beef {
-    height: 2.5rem;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     padding-top: 0.5rem;
@@ -141,11 +141,9 @@ img {
 
 .fries-circle-inner-beef {
     position: absolute;
-    top: 0.15rem;
+    top: 0.5rem;
     right: -0.1rem;
 }
-
-
 
 
 .food-item-indiv-outer {
