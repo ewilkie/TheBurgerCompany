@@ -125,7 +125,7 @@ img {
 }
 
 .food-item-header {
-    height: 70px;
+    height: 2.5rem;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -271,6 +271,15 @@ img {
     top: -0.2rem;
     right: -0.1rem;
 }
+
+
+.fries-circle-outer-chick {
+    height: 5.5rem;
+    width: 5.5rem;
+    position: relative;
+    z-index: 1;
+}
+
 
 .fries-circle-inner-chick {
     position: absolute;
