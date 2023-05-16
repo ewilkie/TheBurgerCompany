@@ -707,9 +707,13 @@ img {
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
     width: 75%;
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
+    grid-column-gap: 0.4rem;
+    grid-row-gap: 0.4rem;
     padding-bottom:5px;
+}
+
+.tenders-col h3 {
+    font-size: 0.9rem;
 }
 
 .food-item-indiv-outer-tender {
@@ -1252,7 +1256,6 @@ footer {
     .epic-burger {
         grid-area: 3 / 2 / 3 / 4; 
     }
-
 
     /* temporary  will need more changes for mobile */
     .fish-col {
