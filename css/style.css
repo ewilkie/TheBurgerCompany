@@ -932,7 +932,6 @@ img {
     display: grid;
     grid-template-columns: 20% 19% auto ;
     grid-column-gap: 5px;
-    bordeR:1px solid white;
 }
 
 .fish-col-left, .fish-col-middle {
